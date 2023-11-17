@@ -17,6 +17,11 @@ public:
   void pause();
   void resume();
 
+  uint8_t getHomeScore();
+  uint8_t getAwayScore();
+  uint8_t getHalfTime();
+  uint16_t getTimeLeftToPlay();
+
 private:
   Visualization* _visualization;
   uint16_t _timeLeftToPlay;

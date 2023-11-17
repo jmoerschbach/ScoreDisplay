@@ -4,14 +4,13 @@
 void SerialConsoleVisualization::begin() {
   Serial.begin(9600);
 }
-void SerialConsoleVisualization::visualizeGameTime(uint16_t gameTime) {
-}
 
-void SerialConsoleVisualization::visualizeScore(uint8_t homeScore, uint8_t awayScore) {
+void SerialConsoleVisualization::visualize(const Game& g) {
+  Serial.print("Seconds left to play: ");
+  Serial.println(g.getTimeLeftToPlay());
   Serial.print("Score is ");
-  Serial.print(homeScore);
+  Serial.print(g.getHomeScore());
   Serial.print(":");
-  Serial.println(awayScore);
-}
-void SerialConsoleVisualization::visualizeHalftime(uint8_t halftime) {
+  Serial.println(g.getAwayScore());
+  Serial.println("-------");
 }

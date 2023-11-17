@@ -32,16 +32,58 @@ void setup() {
   game.begin();
 }
 
+void sendEcho() {
+  const byte echoCommand = ECHO;
+  //configure to send
+  //send echo
+}
+
 void loop() {
   if (radio.available()) {
-    byte text;
-    radio.read(&text, sizeof(text));
-    if (text == PLAY) {
-      leds[0] = CRGB::Red;
-      game.increaseHomeScore();
-    } else {
-      leds[0] = CRGB::Black;
-      //game.decreaseHomeScore();
+    byte receivedCommand;
+    radio.read(&receivedCommand, sizeof(receivedCommand));
+    // Serial.println(receivedCommand);
+    switch (receivedCommand) {
+      case ECHO:
+        sendEcho();
+        break;
+      case PLAY:
+        game.resume();
+        break;
+      case STOP:
+        game.pause();
+        break;
+      case RESET_TIME_10:
+        game.setTimeLeftToPlay(10 * 60);
+        break;
+      case RESET_TIME_7_5:
+        game.setTimeLeftToPlay(7 * 60 + 30);
+        break;
+      case RESET_TIME_5:
+        game.setTimeLeftToPlay(5 * 60);
+        break;
+      case RESET_TIME_3:
+        game.setTimeLeftToPlay(3 * 60);
+        break;
+      case INCREASE_HOME_SCORE:
+        game.increaseHomeScore();
+        leds[0] = CRGB::Red;
+        break;
+      case DECREASE_HOME_SCORE:
+        game.decreaseHomeScore();
+        leds[0] = CRGB::Red;
+        break;
+      case INCREASE_AWAY_SCORE:
+        game.increaseAwayScore();
+        leds[0] = CRGB::Red;
+        break;
+      case DECREASE_AWAY_SCORE:
+        leds[0] = CRGB::Black;
+        game.decreaseAwayScore();
+        break;
+      default:
+        leds[0] = CRGB::Black;
+        //game.decreaseHomeScore();
     }
     FastLED.show();
   }

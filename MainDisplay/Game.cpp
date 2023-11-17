@@ -47,7 +47,21 @@ void Game::resume() {
   //start timer
 }
 void Game::showOnDisplay() {
+  _visualization->visualize(*this);
+}
 
-  _visualization->visualizeGameTime(_timeLeftToPlay);
-  _visualization->visualizeScore(_homeScore, _awayScore);
+uint16_t Game::getTimeLeftToPlay() {
+  return _timeLeftToPlay;
+}
+
+uint8_t Game::getHomeScore() {
+  return _homeScore;
+}
+
+uint8_t Game::getAwayScore() {
+  return _awayScore;
+}
+
+uint8_t Game::getHalfTime() {
+  return _halfTime;
 }
