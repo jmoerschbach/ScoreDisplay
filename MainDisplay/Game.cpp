@@ -1,4 +1,29 @@
 #include "Game.h"
+#define PRELOAD_VALUE (65535 - 15625)
+
+volatile uint8_t tick = 0;
+
+ISR(TIMER1_OVF_vect) {
+  TCNT1 = PRELOAD_VALUE;
+  tick = 1;
+}
+
+void configureTimer() {
+  cli();
+  TCCR1A = 0;
+  TCCR1B = 0;
+  TCNT1 = PRELOAD_VALUE;   // preload counter value for 1Hz
+  TIMSK1 |= (1 << TOIE1);  // enable timer overflow interrupt
+  sei();
+}
+
+void startTimer() {
+  TCCR1B |= (1 << CS12) | (1 << CS10);  // Set prescaler to 1024 which starts the timer
+}
+
+void stopTimer() {
+  TCCR1B &= ~(1 << CS12) & ~(1 << CS10);  // Unset prescaler to stop the timer
+}
 
 Game::Game(Visualization* visualization, uint16_t timeInSeconds) {
   _visualization = visualization;
@@ -9,7 +34,17 @@ Game::Game(Visualization* visualization, uint16_t timeInSeconds) {
 }
 
 void Game::begin() {
-  //configure timer?
+  configureTimer();
+}
+
+void Game::run() {
+  if (tick) {
+    tick = 0;
+    if (_timeLeftToPlay > 0) {
+      _timeLeftToPlay--;
+      showOnDisplay();
+    }
+  }
 }
 
 void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
@@ -33,18 +68,18 @@ void Game::decreaseAwayScore() {
   showOnDisplay();
 }
 void Game::decreaseHalfTime() {
-  if(_halfTime > 0) _halfTime--;
+  if (_halfTime > 1) _halfTime--;
   showOnDisplay();
 }
 void Game::increaseHalfTime() {
-  if(_halfTime < 9) _halfTime++;
+  if (_halfTime < 9) _halfTime++;
   showOnDisplay();
 }
 void Game::pause() {
-  //pause timer
+  stopTimer();
 }
 void Game::resume() {
-  //start timer
+  startTimer();
 }
 void Game::showOnDisplay() {
   _visualization->visualize(*this);

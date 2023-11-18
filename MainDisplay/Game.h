@@ -17,6 +17,8 @@ public:
   void pause();
   void resume();
 
+  void run();
+
   uint8_t getHomeScore();
   uint8_t getAwayScore();
   uint8_t getHalfTime();
