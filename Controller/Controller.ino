@@ -1,30 +1,28 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
+#include "Commands.h"
 
-RF24 radio(10, 9); // CE, CSN
+RF24 radio(10, 9);  // CE, CSN
 
 const byte address[6] = "00001";
-const byte commandEnable = 0x00;
-const byte commandDisable = 0x01;
 
 void setup() {
- pinMode(LED_BUILTIN, OUTPUT);
-   radio.begin();
+  Serial.begin(9600);
+  pinMode(LED_BUILTIN, OUTPUT);
+  radio.begin();
   radio.openWritingPipe(address);
   radio.setPALevel(RF24_PA_MIN);
   radio.stopListening();
-
 }
 
 void loop() {
-  const char text[] = "Hello World";
-  radio.write(&commandEnable, sizeof(commandEnable));
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  radio.write(&commandDisable, sizeof(commandDisable));
+  if (Serial.available()) {
+    byte command = Serial.parseInt();
+    Serial.write(command);
 
-  delay(1000);      
-
+    radio.write(&command, 1);
+    digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  }
+  digitalWrite(LED_BUILTIN, LOW);  // turn the LED off by making the voltage LOW
 }
