@@ -6,29 +6,26 @@
 #include "Game.h"
 #include "Visualization.h"
 #include "SerialConsoleVisualization.h"
+#include "SevenSegmentVisualization.h"
 
-#define NUM_LEDS 5
-#define DATA_PIN 3
-
-CRGB leds[NUM_LEDS];
-RF24 radio(10, 9);  // CE, CSN
+RF24 radio(9, 10);  // CE, CSN
 SerialConsoleVisualization visualization;
+SevenSegmentVisualization visualization2;
 
 Game game(&visualization);
 
 const byte address[6] = "00001";
 
 
-
+uint8_t counter = 0;
 void setup() {
   radio.begin();
   radio.openReadingPipe(0, address);
   radio.setPALevel(RF24_PA_MIN);
   radio.startListening();
 
-  FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.setBrightness(64);
-  visualization.begin();
+  FastLED.setBrightness(128);
+  visualization2.begin();
   game.begin();
   // game.resume();
   // game.pause();
@@ -44,8 +41,11 @@ void loop() {
   if (radio.available()) {
     executeCommand();
   }
-  game.run();
-  FastLED.show();
+  if (counter > 9) {
+    counter = 0;
+  }
+  visualization2.visualize(counter++);
+  delay(500);
 }
 
 

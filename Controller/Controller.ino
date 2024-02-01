@@ -3,7 +3,7 @@
 #include <RF24.h>
 #include "Commands.h"
 
-RF24 radio(10, 9);  // CE, CSN
+RF24 radio(9,10);  // CE, CSN
 
 const byte address[6] = "00001";
 
@@ -17,12 +17,19 @@ void setup() {
 }
 
 void loop() {
-  if (Serial.available()) {
-    byte command = Serial.parseInt();
-    Serial.write(command);
+  // digitalWrite(LED_BUILTIN, LOW);
+  radio.write(0x09, 1);
+  delay(500);
+  radio.write(0x0A, 1);
+  //  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
 
-    radio.write(&command, 1);
-    digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  }
-  digitalWrite(LED_BUILTIN, LOW);  // turn the LED off by making the voltage LOW
+  // if (Serial.available()) {
+  //   byte command = Serial.parseInt();
+  //   Serial.write(command);
+
+  //   radio.write(&command, 1);
+  //   digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  // }
+  // digitalWrite(LED_BUILTIN, LOW);  // turn the LED off by making the voltage LOW
 }

@@ -80,7 +80,7 @@
   (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
   (name "R1") (value "{{RESISTANCE}}")
   (lock_assembly false)
-  (attribute "RESISTANCE" (type resistance) (unit ohm) (value ""))
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "220"))
   (device a0e021c0-90ab-4415-802e-40a847f682c8
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
   )
@@ -394,7 +394,7 @@
   (lib_variant a5995314-f535-45d4-8bd8-2d0b8a0dc42a)
   (name "R2") (value "{{RESISTANCE}}")
   (lock_assembly false)
-  (attribute "RESISTANCE" (type resistance) (unit ohm) (value ""))
+  (attribute "RESISTANCE" (type resistance) (unit ohm) (value "220"))
   (device a0e021c0-90ab-4415-802e-40a847f682c8
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
   )
