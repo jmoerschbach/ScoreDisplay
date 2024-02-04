@@ -77,21 +77,17 @@ void executeCommand() {
       break;
     case INCREASE_HOME_SCORE:
       game.increaseHomeScore();
-      leds[0] = CRGB::Red;
       break;
     case DECREASE_HOME_SCORE:
       game.decreaseHomeScore();
-      leds[0] = CRGB::Red;
       break;
     case INCREASE_AWAY_SCORE:
       game.increaseAwayScore();
-      leds[0] = CRGB::Red;
       break;
     case DECREASE_AWAY_SCORE:
-      leds[0] = CRGB::Black;
       game.decreaseAwayScore();
       break;
     default:
-      leds[0] = CRGB::Black;
+    ;
   }
 }

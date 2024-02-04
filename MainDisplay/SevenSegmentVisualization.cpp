@@ -1,49 +1,27 @@
 #include "SevenSegmentVisualization.h"
 #include <Arduino.h>
 
-/*
-  bbbbb
-  c   a
-  c   a
-  ggggg
-  d   f
-  d   f
-  eeeee
-*/
-const uint8_t DIGITS[] = {
-  0b00111111,
-  0b00100001,
-  0b01011011,
-  0b01110011,
-  0b01100101,
-  0b01110110,
-  0b01111100,
-  0b00100011,
-  0b01111111,
-  0b01100111
-};
+
+
 void SevenSegmentVisualization::begin() {
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_TIME, GRB>(_timeLeds, NUMBER_LEDS_TIME);
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_SCORE, GRB>(_scoreLeds, NUMBER_LEDS_SCORE);
 }
-void SevenSegmentVisualization::visualize(uint8_t value) {
-  if (value > 9) {
-    return;
-  }
-  uint8_t digit = DIGITS[value];
-  for (uint8_t segment = 0; segment < 7; segment++) {
-    for (uint8_t j = 0; j < LEDS_PER_SEGMENT_TIME; j++) {
-      if (digit & (1 << segment)) {
-        _timeLeds[segment * LEDS_PER_SEGMENT_TIME + j] = CRGB::Red;
-      } else {
-        _timeLeds[segment * LEDS_PER_SEGMENT_TIME + j] = CRGB::Black;
-      }
-    }
-  }
+void SevenSegmentVisualization::visualize(const GameData& data) {
+  _timeDigit_0.show(&_timeLeds[0 * 7 * LEDS_PER_SEGMENT_TIME], data.secondsToPlay);
+  _timeDigit_1.show(&_timeLeds[1 * 7 * LEDS_PER_SEGMENT_TIME], 1);
+  _timeDigit_2.show(&_timeLeds[2 * 7 * LEDS_PER_SEGMENT_TIME + 2 * LEDS_PER_DOT], 2);
+  _timeDigit_3.show(&_timeLeds[3 * 7 * LEDS_PER_SEGMENT_TIME + 2 * LEDS_PER_DOT], 3);
+
+  _scoreHomeDigit_0.show(&_scoreLeds[0 * 7 * LEDS_PER_SEGMENT_SCORE], 0);
+  _scoreHomeDigit_1.show(&_scoreLeds[1 * 7 * LEDS_PER_SEGMENT_SCORE], 0);
+  _halftimeDigit.show(&_scoreLeds[2 * 7 * LEDS_PER_SEGMENT_SCORE], 0);
+  _scoreAwayDigit_0.show(&_scoreLeds[2 * 7 * LEDS_PER_SEGMENT_SCORE + 1 * 7 * LEDS_PER_SEGMENT_HALFTIME], 0);
+  _scoreAwayDigit_1.show(&_scoreLeds[3 * 7 * LEDS_PER_SEGMENT_SCORE + 1 * 7 * LEDS_PER_SEGMENT_HALFTIME], 0);
 
   FastLED.show();
 }
 void SevenSegmentVisualization::visualize(const Game& g) {
-  _timeLeds[0] = CRGB::Red;
-  FastLED.show();
 }
+
+
