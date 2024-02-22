@@ -5,6 +5,6 @@
 class SerialConsoleVisualization : public Visualization {
   public:
   virtual void begin();
-  virtual void visualize(const Game& g);
+  virtual void visualize(const GameData& data);
 };
 #endif

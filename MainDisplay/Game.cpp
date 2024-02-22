@@ -82,7 +82,7 @@ void Game::resume() {
   startTimer();
 }
 void Game::showOnDisplay() {
-  _visualization->visualize(*this);
+  //_visualization->visualize(*this);
 }
 
 uint16_t Game::getTimeLeftToPlay() {
