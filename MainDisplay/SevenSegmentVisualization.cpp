@@ -1,15 +1,13 @@
 #include "SevenSegmentVisualization.h"
 #include <Arduino.h>
 
-
-
 void SevenSegmentVisualization::begin() {
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_TIME, GRB>(_timeLeds, NUMBER_LEDS_TIME);
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_SCORE, GRB>(_scoreLeds, NUMBER_LEDS_SCORE);
 
   FastLED.setBrightness(128);
 }
-void SevenSegmentVisualization::visualize(const GameData& data) {
+void SevenSegmentVisualization::visualize(const MainDisplayData& data) {
   uint8_t minutes = data.secondsToPlay / 60;
   uint8_t seconds = data.secondsToPlay - (minutes * 60);
   TwoDigit minuteDigits = convert2DecimalDigit(minutes);

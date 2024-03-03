@@ -12,6 +12,17 @@
   d   f
   eeeee
 */
+constexpr uint8_t ZERO = 0b00111111;
+constexpr uint8_t ONE = 0b00111111;
+constexpr uint8_t TWO = 0b00111111;
+constexpr uint8_t THREE = 0b00111111;
+constexpr uint8_t FOUR = 0b00111111;
+constexpr uint8_t FIVE = 0b00111111;
+constexpr uint8_t SIX = 0b00111111;
+constexpr uint8_t SEVEN = 0b00111111;
+constexpr uint8_t EIGHT = 0b00111111;
+constexpr uint8_t NINE = 0b00111111;
+constexpr uint8_t INVALID = 0b00111111;
 const uint8_t DIGITS[] = {
   0b00111111,
   0b00100001,
@@ -22,7 +33,8 @@ const uint8_t DIGITS[] = {
   0b01111100,
   0b00100011,
   0b01111111,
-  0b01100111
+  0b01100111,
+  0b01000000 //INVALID, show only segment g
 };
 class SevenSegmentDigit {
   public:

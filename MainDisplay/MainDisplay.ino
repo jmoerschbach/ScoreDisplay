@@ -3,16 +3,16 @@
 #include "Visualization.h"
 #include "SerialConsoleVisualization.h"
 #include "SevenSegmentVisualization.h"
+#include "DataPackages.h"
 
 RF24 radio(9, 10);  // CE, CSN
-SerialConsoleVisualization visualization;
-SevenSegmentVisualization visualization2;
+SevenSegmentVisualization visualization;
 
 
 const byte address[6] = "00001";
 
 
-GameData data;
+MainDisplayData data;
 void setup() {
   radio.begin();
   radio.openReadingPipe(0, address);
@@ -20,19 +20,19 @@ void setup() {
   radio.startListening();
 
 
-  visualization2.begin();
+  visualization.begin();
 
   data.secondsToPlay = 600;
   data.awayScore = 3;
   data.homeScore = 1;
   data.halftime = 1;
-  visualization2.visualize(data);
+  visualization.visualize(data);
 }
 
 
 void loop() {
   if (radio.available()) {
     radio.read(&data, sizeof(data));
-    visualization2.visualize(data);
+    visualization.visualize(data);
   }
 }

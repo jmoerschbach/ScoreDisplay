@@ -5,7 +5,7 @@ void SerialConsoleVisualization::begin() {
   Serial.begin(9600);
 }
 
-void SerialConsoleVisualization::visualize(const GameData& g) {
+void SerialConsoleVisualization::visualize(const MainDisplayData& g) {
   // Serial.print("Seconds left to play: ");
   // Serial.println(g.getTimeLeftToPlay());
   // Serial.print("Score is ");

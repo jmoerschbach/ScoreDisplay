@@ -25,7 +25,7 @@ struct TwoDigit {
 class SevenSegmentVisualization : public Visualization {
 public:
   virtual void begin();
-  virtual void visualize(const GameData& data);
+  virtual void visualize(const MainDisplayData& data);
 private:
   TwoDigit convert2DecimalDigit(uint8_t value);
 

@@ -5,7 +5,7 @@
 class Visualization {
 public:
   virtual void begin() = 0;
-  virtual void visualize(const GameData& data);
+  virtual void visualize(const MainDisplayData& data);
   //virtual ~Visualization();
 };
 #endif
