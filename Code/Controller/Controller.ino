@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <nRF24L01.h>
 #include <RF24.h>
 #include "DataPackages.h"
 #include "Game.h"
@@ -38,6 +37,11 @@ void setup() {
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
+
+//   mainDisplayData.awayScoreColor = CRGB::Yellow;
+//   mainDisplayData.homeScoreColor = CRGB::Red;
+//   mainDisplayData.timeColor = CRGB::Green;
+//   mainDisplayData.halftimeColor = CRGB::Blue;
 }
 
 void loop() {

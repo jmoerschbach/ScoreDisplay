@@ -21,11 +21,6 @@ void setup() {
 
 
   visualization.begin();
-
-  data.secondsToPlay = 595;
-  data.awayScore = 3;
-  data.homeScore = 12;
-  data.halftime = 1;
   visualization.visualize(data);
 }
 

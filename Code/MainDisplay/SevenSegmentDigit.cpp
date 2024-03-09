@@ -21,3 +21,7 @@ void SevenSegmentDigit::show(CRGB leds[], uint8_t value) {
     }
   }
 }
+
+void SevenSegmentDigit::setColor(const CRGB& color) {
+  _color = color;
+}

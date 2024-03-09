@@ -40,6 +40,7 @@ class SevenSegmentDigit {
   public:
   SevenSegmentDigit(uint8_t ledsPerSegment, CRGB color = CRGB::Red);
   void show(CRGB leds[], uint8_t value);
+  void setColor(const CRGB& color);
   
   private:
   uint8_t _ledsPerSegment;
