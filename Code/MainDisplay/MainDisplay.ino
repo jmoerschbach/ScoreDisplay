@@ -1,7 +1,6 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 #include "Visualization.h"
-#include "SerialConsoleVisualization.h"
 #include "SevenSegmentVisualization.h"
 #include "DataPackages.h"
 

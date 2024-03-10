@@ -1,5 +1,5 @@
-#ifndef _SEVENSEGMENTVDIGIT_h
-#define _SEVENSEGMENTVDIGIT_h
+#ifndef _SEVENSEGMENTDIGIT_h
+#define _SEVENSEGMENTDIGIT_h
 
 #include <FastLED.h>
 
@@ -12,30 +12,30 @@
   d   f
   eeeee
 */
-constexpr uint8_t ZERO = 0b00111111;
-constexpr uint8_t ONE = 0b00111111;
-constexpr uint8_t TWO = 0b00111111;
-constexpr uint8_t THREE = 0b00111111;
-constexpr uint8_t FOUR = 0b00111111;
-constexpr uint8_t FIVE = 0b00111111;
-constexpr uint8_t SIX = 0b00111111;
-constexpr uint8_t SEVEN = 0b00111111;
-constexpr uint8_t EIGHT = 0b00111111;
-constexpr uint8_t NINE = 0b00111111;
-constexpr uint8_t INVALID = 0b00111111;
+constexpr uint8_t ZERO    = 0b00111111;
+constexpr uint8_t ONE     = 0b00100001;
+constexpr uint8_t TWO     = 0b01011011;
+constexpr uint8_t THREE   = 0b01110011;
+constexpr uint8_t FOUR    = 0b01100101;
+constexpr uint8_t FIVE    = 0b01110110;
+constexpr uint8_t SIX     = 0b01111100;
+constexpr uint8_t SEVEN   = 0b00100011;
+constexpr uint8_t EIGHT   = 0b01111111;
+constexpr uint8_t NINE    = 0b01100111;
+constexpr uint8_t INVALID = 0b01000000;
 const uint8_t DIGITS[] = {
-  0b00111111,
-  0b00100001,
-  0b01011011,
-  0b01110011,
-  0b01100101,
-  0b01110110,
-  0b01111100,
-  0b00100011,
-  0b01111111,
-  0b01100111,
-  0b01000000 //INVALID, show only segment g
+  ZERO,
+  ONE,
+  TWO,
+  THREE,
+  FOUR,
+  FIVE,
+  SIX,
+  SEVEN,
+  EIGHT,
+  NINE
 };
+
 class SevenSegmentDigit {
   public:
   SevenSegmentDigit(uint8_t ledsPerSegment, CRGB color = CRGB::Red);

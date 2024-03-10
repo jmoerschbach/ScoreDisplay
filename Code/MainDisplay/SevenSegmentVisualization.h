@@ -1,8 +1,8 @@
 #ifndef _SEVENSEGMENTVISUALIZATION_h
 #define _SEVENSEGMENTVISUALIZATION_h
-#include "Visualization.h"
 #include "SevenSegmentDigit.h"
 #include "DataPackages.h"
+#include "Utils.h"
 #include <FastLED.h>
 
 #define LEDS_PER_SEGMENT_TIME 7
@@ -17,17 +17,14 @@
 #define NUMBER_LEDS_SCORE (7 * LEDS_PER_SEGMENT_SCORE * NUMBER_DIGITS_SCORE + 7 * LEDS_PER_SEGMENT_HALFTIME)
 #define DATA_PIN_LEDS_SCORE A0
 
-struct TwoDigit {
-  uint8_t firstDigit;
-  uint8_t secondDigit;
-};
 
-class SevenSegmentVisualization : public Visualization {
+class SevenSegmentVisualization {
 public:
-  virtual void begin();
-  virtual void visualize(const MainDisplayData& data);
+  void begin();
+  void visualize(const MainDisplayData& data);
 private:
-  TwoDigit convert2DecimalDigit(uint8_t value);
+ void updateTime(const MainDisplayData& data);
+ void updateScoreAndHalftime(const MainDisplayData& data);
 
   SevenSegmentDigit _timeDigit_0 = SevenSegmentDigit(LEDS_PER_SEGMENT_TIME);
   SevenSegmentDigit _timeDigit_1 = SevenSegmentDigit(LEDS_PER_SEGMENT_TIME);
