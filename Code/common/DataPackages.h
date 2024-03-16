@@ -12,6 +12,7 @@ struct MainDisplayData {
   CRGB awayScoreColor = CRGB::Blue;
   CRGB homeScoreColor = CRGB::Green;
   CRGB halftimeColor = CRGB::White;
+  uint8_t brightness = 128;
 };
 
 // This defines the data packages to the shotclock displays

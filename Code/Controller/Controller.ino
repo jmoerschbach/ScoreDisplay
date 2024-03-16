@@ -38,13 +38,13 @@ void setup() {
 
   game.begin(onDataChangedCallback);
 
-//   mainDisplayData.awayScoreColor = CRGB::Yellow;
-//   mainDisplayData.homeScoreColor = CRGB::Red;
-//   mainDisplayData.timeColor = CRGB::Green;
-//   mainDisplayData.halftimeColor = CRGB::Blue;
+  //   mainDisplayData.awayScoreColor = CRGB::Yellow;
+  //   mainDisplayData.homeScoreColor = CRGB::Red;
+  //   mainDisplayData.timeColor = CRGB::Green;
+  //   mainDisplayData.halftimeColor = CRGB::Blue;
+  // mainDisplayData.brightness = 255;
 }
 
 void loop() {
   game.loop();
-
 }
