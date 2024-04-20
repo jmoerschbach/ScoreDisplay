@@ -17,8 +17,9 @@ struct MainDisplayData {
 
 // This defines the data packages to the shotclock displays
 struct ShotclockData {
-  uint8_t secondsToShot;
-  bool enabled;
+  uint8_t secondsToShot = 0;
+  bool enabled = true;
+  CRGB timeColor = CRGB::Red;
 };
 
 #endif
