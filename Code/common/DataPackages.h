@@ -20,6 +20,7 @@ struct ShotclockData {
   uint8_t secondsToShot = 0;
   bool enabled = true;
   CRGB timeColor = CRGB::Red;
+  uint8_t brightness = 128;
 };
 
 #endif
