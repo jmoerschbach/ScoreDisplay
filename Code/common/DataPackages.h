@@ -8,6 +8,7 @@ struct MainDisplayData {
   uint8_t awayScore = 0;
   uint8_t homeScore = 0;
   uint8_t halftime = 0;
+  bool enabled = true;
   CRGB timeColor = CRGB::Red;
   CRGB awayScoreColor = CRGB::Blue;
   CRGB homeScoreColor = CRGB::Green;
@@ -15,7 +16,7 @@ struct MainDisplayData {
   uint8_t brightness = 128;
 };
 
-// This defines the data packages to the shotclock displays
+// This defines the data package to the shotclock displays
 struct ShotclockData {
   uint8_t secondsToShot = 0;
   bool enabled = true;

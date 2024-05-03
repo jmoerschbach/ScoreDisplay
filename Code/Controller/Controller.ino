@@ -4,18 +4,14 @@
 #include "Game.h"
 #include "Utils.h"
 
-#define INDICATOR_LED_PIN 1
-// this is the frequenzy offset
-// this must be the same for all 3 components of a system:
-// MainDisplay, Shotclocks, Controller
-// It must be different between 2 systems
-constexpr int UNIQUE_CHANNEL_PER_SYSTEM = 5;
-// constexpr int UNIQUE_CHANNEL_PER_SYSTEM = 50;
-
+constexpr int INDICATOR_LED_PIN = 1;
+constexpr byte mainDisplayAddress[6] = ADDRESS_MAINDISPLAY;
+constexpr byte firstShotclockAddress[6] = ADDRESS_SHOTCLOCK_0;
+constexpr byte secondShotclockAddress[6] = ADDRESS_SHOTCLOCK_1;
 
 RF24 radio(9, 10);  // CE, CSN
-
 MainDisplayData mainDisplayData;
+ShotclockData shotclockData;
 Game game;
 
 void onDataChangedCallback() {
@@ -25,34 +21,42 @@ void onDataChangedCallback() {
   send();
 }
 
-const byte mainDisplayAddress[6] = ADDRESS_MAINDISPLAY;
-const byte firstShotclockAddress[6] = ADDRESS_SHOTCLOCK_0;
-const byte secondShotclockAddress[6] = ADDRESS_SHOTCLOCK_1;
 
 void send() {
-  if (radio.write(&mainDisplayData, sizeof(mainDisplayData))) {
+  bool success = false;
+
+  radio.openWritingPipe(mainDisplayAddress);
+  success &= radio.write(&mainDisplayData, sizeof(mainDisplayData));
+
+  radio.openWritingPipe(firstShotclockAddress);
+  success &= radio.write(&shotclockData, sizeof(shotclockData));
+
+  radio.openWritingPipe(secondShotclockAddress);
+  success &= radio.write(&shotclockData, sizeof(shotclockData));
+
+  if (success) {
     digitalWrite(INDICATOR_LED_PIN, HIGH);
   } else {
     digitalWrite(INDICATOR_LED_PIN, LOW);
   }
+
+  // if (radio.write(&mainDisplayData, sizeof(mainDisplayData))) {
+  //   digitalWrite(INDICATOR_LED_PIN, HIGH);
+  // } else {
+  //   digitalWrite(INDICATOR_LED_PIN, LOW);
+  // }
 }
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
   digitalWrite(INDICATOR_LED_PIN, LOW);
   radio.begin();
-  radio.setChannel(UNIQUE_CHANNEL_PER_SYSTEM);
+  radio.setChannel(CHANNEL_SYSTEM_0);
   radio.openWritingPipe(mainDisplayAddress);
-  radio.setPALevel(RF24_PA_MIN);
+  radio.setPALevel(RF24_PA_MAX);
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
-
-  //   mainDisplayData.awayScoreColor = CRGB::Yellow;
-  //   mainDisplayData.homeScoreColor = CRGB::Red;
-  //   mainDisplayData.timeColor = CRGB::Green;
-  //   mainDisplayData.halftimeColor = CRGB::Blue;
-  // mainDisplayData.brightness = 255;
 }
 
 void loop() {
