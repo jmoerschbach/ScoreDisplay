@@ -18,6 +18,10 @@ void onDataChangedCallback() {
   mainDisplayData.homeScore = game.getHomeScore();
   mainDisplayData.awayScore = game.getAwayScore();
   mainDisplayData.secondsToPlay = game.getTimeLeftToPlay();
+  mainDisplayData.halftime = game.getHalfTime();
+
+  shotclockData.secondsToShot = game.getTimeLeftToShoot();
+
   send();
 }
 

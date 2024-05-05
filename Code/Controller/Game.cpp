@@ -25,8 +25,9 @@ void stopTimer() {
   TCCR1B &= ~(1 << CS12) & ~(1 << CS10);  // Unset prescaler to stop the timer
 }
 
-Game::Game(uint16_t timeInSeconds) {
-  _timeLeftToPlay = timeInSeconds;
+Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
+  _timeLeftToPlay = gameTimeInSeconds;
+  _timeLeftToShoot = shotclockTimeInSeconds;
   _awayScore = 0;
   _homeScore = 0;
   _halfTime = 1;
@@ -43,8 +44,11 @@ void Game::loop() {
     tick = 0;
     if (_timeLeftToPlay > 0) {
       _timeLeftToPlay--;
-      _callback();
     }
+    if (_timeLeftToShoot > 0) {
+      _timeLeftToShoot--;
+    }
+    _callback();
   }
 }
 
@@ -102,4 +106,8 @@ uint8_t Game::getAwayScore() {
 
 uint8_t Game::getHalfTime() {
   return _halfTime;
+}
+
+uint8_t Game::getTimeLeftToShoot() {
+  return _timeLeftToShoot;
 }
