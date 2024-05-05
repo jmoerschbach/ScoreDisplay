@@ -8,7 +8,7 @@
 #define LEDS_PER_SEGMENT_TIME 8
 #define NUMBER_DIGITS_TIME 2
 #define NUMBER_LEDS_TIME (7 * LEDS_PER_SEGMENT_TIME * NUMBER_DIGITS_TIME)
-#define DATA_PIN_LEDS_TIME A1
+#define DATA_PIN_LEDS_TIME A0
 
 
 class SevenSegmentVisualization {
