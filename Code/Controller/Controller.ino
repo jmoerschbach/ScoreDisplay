@@ -21,13 +21,14 @@ void onDataChangedCallback() {
   mainDisplayData.halftime = game.getHalfTime();
 
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
+  // shotclockData.enabled = game.getTimeLeftToShoot() != 55;
 
   send();
 }
 
 
 void send() {
-  bool success = false;
+  bool success = true;
 
   radio.openWritingPipe(mainDisplayAddress);
   success &= radio.write(&mainDisplayData, sizeof(mainDisplayData));
@@ -43,20 +44,14 @@ void send() {
   } else {
     digitalWrite(INDICATOR_LED_PIN, LOW);
   }
-
-  // if (radio.write(&mainDisplayData, sizeof(mainDisplayData))) {
-  //   digitalWrite(INDICATOR_LED_PIN, HIGH);
-  // } else {
-  //   digitalWrite(INDICATOR_LED_PIN, LOW);
-  // }
 }
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
   digitalWrite(INDICATOR_LED_PIN, LOW);
+  
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
-  radio.openWritingPipe(mainDisplayAddress);
   radio.setPALevel(RF24_PA_MAX);
   radio.stopListening();
 

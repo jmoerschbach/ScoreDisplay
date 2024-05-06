@@ -10,8 +10,8 @@
 // this must be the same for all 3 components of a system:
 // MainDisplay, Shotclocks, Controller
 // It must be different between 2 systems
-constexpr int CHANNEL_SYSTEM_0 = 5;
-constexpr int CHANNEL_SYSTEM_1 = 50;
+constexpr int CHANNEL_SYSTEM_0 = 76;
+constexpr int CHANNEL_SYSTEM_1 = 78;
 
 typedef struct TwoDigit {
   uint8_t firstDigit;
