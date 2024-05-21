@@ -10,23 +10,33 @@ void SevenSegmentDigit::show(CRGB leds[], uint8_t value) {
   if (value <= 9) {
     digit = DIGITS[value];
   }
+  fill_solid(leds, 7 * _ledsPerSegment, _color);
   for (uint8_t segment = 0; segment < 7; segment++) {
-    for (uint8_t j = 0; j < _ledsPerSegment; j++) {
-      if (digit & (1 << segment)) {
-        leds[segment * _ledsPerSegment + j] = _color;
-      } else {
-        leds[segment * _ledsPerSegment + j] = CRGB::Black;
-      }
+    if (digit & (1 << segment)) {
+      //do nothing
+    } else {
+      fill_solid(&leds[segment * _ledsPerSegment], _ledsPerSegment, CRGB::Black);
+    }
+  }
+}
+
+void SevenSegmentDigit::showRainbow(CRGB leds[], uint8_t value) {
+  uint8_t digit = INVALID;
+  if (value <= 9) {
+    digit = DIGITS[value];
+  }
+  fill_rainbow(leds, 7 * _ledsPerSegment, 10, 15);
+  for (uint8_t segment = 0; segment < 7; segment++) {
+    if (digit & (1 << segment)) {
+      // do nothing
+    } else {
+      fill_solid(&leds[segment * _ledsPerSegment], _ledsPerSegment, CRGB::Black);
     }
   }
 }
 
 void SevenSegmentDigit::hide(CRGB leds[]) {
-  for (uint8_t segment = 0; segment < 7; segment++) {
-    for (uint8_t j = 0; j < _ledsPerSegment; j++) {
-      leds[segment * _ledsPerSegment + j] = CRGB::Black;
-    }
-  }
+  fill_solid(leds, 7 * _ledsPerSegment, CRGB::Black);
 }
 
 void SevenSegmentDigit::setColor(const CRGB& color) {

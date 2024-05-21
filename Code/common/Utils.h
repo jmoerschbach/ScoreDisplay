@@ -2,9 +2,9 @@
 #define _UTILS_H
 #include <Arduino.h>
 
-#define ADDRESS_SHOTCLOCK_0 "SHOT0"
-#define ADDRESS_SHOTCLOCK_1 "SHOT1"
-#define ADDRESS_MAINDISPLAY "MAIN"
+constexpr byte ADDRESS_SHOTCLOCK_0[6] = "SHOT0";
+constexpr byte ADDRESS_SHOTCLOCK_1[6] = "SHOT1";
+constexpr byte ADDRESS_MAINDISPLAY[6] = "MAIN";
 
 /**
 * This is the frequenzy offset of system 0
