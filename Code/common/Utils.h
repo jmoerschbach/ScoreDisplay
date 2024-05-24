@@ -15,7 +15,7 @@ constexpr byte ADDRESS_MAIN_DISPLAY[6] = "MAIN0";
 *
 * It must be different between 2 systems
 */
-constexpr int CHANNEL_SYSTEM_0 = 76;
+constexpr int CHANNEL_SYSTEM_0 = 110;
 /**
 * This is the frequenzy offset of system 1
 *
@@ -24,7 +24,7 @@ constexpr int CHANNEL_SYSTEM_0 = 76;
 *
 * It must be different between 2 systems
 */
-constexpr int CHANNEL_SYSTEM_1 = 78;
+constexpr int CHANNEL_SYSTEM_1 = 115;
 
 typedef struct TwoDigit {
   uint8_t firstDigit;
