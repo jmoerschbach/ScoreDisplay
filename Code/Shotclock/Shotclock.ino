@@ -6,17 +6,16 @@
 RF24 radio(9, 10);  // CE, CSN
 SevenSegmentVisualization visualization;
 
-// this must be either SHOT0 or SHOT1
-const byte address[6] = ADDRESS_SHOTCLOCK_0;
-// const byte address[6] = ADDRESS_SHOTCLOCK_1;
-
 ShotclockData data;
 
 void setup() {
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
-  radio.openReadingPipe(0, address);
+  // radio.setChannel(CHANNEL_SYSTEM_1);
+  // radio.openReadingPipe(0, ADDRESS_SHOTCLOCK_0);
+  radio.openReadingPipe(0, ADDRESS_SHOTCLOCK_1);
   radio.setPALevel(RF24_PA_MAX);
+  radio.setDataRate(RF24_250KBPS);
   radio.startListening();
 
 

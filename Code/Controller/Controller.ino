@@ -5,9 +5,6 @@
 #include "Utils.h"
 
 constexpr int INDICATOR_LED_PIN = 1;
-constexpr byte mainDisplayAddress[6] = ADDRESS_MAINDISPLAY;
-constexpr byte firstShotclockAddress[6] = ADDRESS_SHOTCLOCK_0;
-constexpr byte secondShotclockAddress[6] = ADDRESS_SHOTCLOCK_1;
 
 RF24 radio(9, 10);  // CE, CSN
 MainDisplayData mainDisplayData;
@@ -30,13 +27,13 @@ void onDataChangedCallback() {
 void send() {
   bool success = true;
 
-  radio.openWritingPipe(mainDisplayAddress);
+  radio.openWritingPipe(ADDRESS_MAIN_DISPLAY);
   success &= radio.write(&mainDisplayData, sizeof(mainDisplayData));
 
-  radio.openWritingPipe(firstShotclockAddress);
+  radio.openWritingPipe(ADDRESS_SHOTCLOCK_0);
   success &= radio.write(&shotclockData, sizeof(shotclockData));
 
-  radio.openWritingPipe(secondShotclockAddress);
+  radio.openWritingPipe(ADDRESS_SHOTCLOCK_1);
   success &= radio.write(&shotclockData, sizeof(shotclockData));
 
   if (success) {
@@ -53,9 +50,11 @@ void setup() {
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
   radio.setPALevel(RF24_PA_MAX);
+  radio.setDataRate(RF24_250KBPS);
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
+
 }
 
 void loop() {

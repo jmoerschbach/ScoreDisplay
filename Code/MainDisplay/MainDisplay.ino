@@ -7,15 +7,13 @@ RF24 radio(9, 10);  // CE, CSN
 SevenSegmentVisualization visualization;
 
 
-const byte address[6] = ADDRESS_MAINDISPLAY;
-
-
 MainDisplayData data;
 void setup() {
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
-  radio.openReadingPipe(0, address);
+  radio.openReadingPipe(0, ADDRESS_MAIN_DISPLAY);
   radio.setPALevel(RF24_PA_MAX);
+  radio.setDataRate(RF24_250KBPS);
   radio.startListening();
 
 
