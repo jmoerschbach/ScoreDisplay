@@ -1,15 +1,20 @@
 #include <Arduino.h>
 #include <RF24.h>
+#include <SmartButton.h>
+#include "ButtonConfiguration.h"
 #include "DataPackages.h"
 #include "Game.h"
 #include "Utils.h"
 
 constexpr int INDICATOR_LED_PIN = 1;
+constexpr int BTN_AWAY_INCREASE_PIN = 7;
 
-RF24 radio(9, 10);  // CE, CSN
-MainDisplayData mainDisplayData;
-ShotclockData shotclockData;
+RF24 radio(9, 10);                // CE, CSN
+MainDisplayData mainDisplayData;  //datastructure sent to the main display
+ShotclockData shotclockData;      //datastructure sent to the shotclock displays
 Game game;
+
+using namespace smartbutton;
 
 void onDataChangedCallback() {
   mainDisplayData.homeScore = game.getHomeScore();
@@ -43,10 +48,24 @@ void send() {
   }
 }
 
+
+
+GenericButtonConfiguration awayScoreIncrease = GenericButtonConfiguration(
+  BTN_AWAY_INCREASE_PIN, []() {
+    game.increaseAwayScore();
+  },
+  []() {
+    game.increaseAwayScore();
+  });
+
+
+SmartButton btnAwayIncrease(&awayScoreIncrease);
+
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
+  pinMode(BTN_AWAY_INCREASE_PIN, INPUT_PULLUP);
   digitalWrite(INDICATOR_LED_PIN, LOW);
-  
+
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
   radio.setPALevel(RF24_PA_MAX);
@@ -54,9 +73,10 @@ void setup() {
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
-
+  btnAwayIncrease.begin();
 }
 
 void loop() {
+  SmartButton::service();
   game.loop();
 }

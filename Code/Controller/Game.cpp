@@ -68,11 +68,13 @@ void Game::decreaseHomeScore() {
 void Game::increaseAwayScore() {
   if (_awayScore < 99) {
     _awayScore++;
+    _callback();
   }
 }
 void Game::decreaseAwayScore() {
   if (_awayScore > 0) {
     _awayScore--;
+    _callback();
   }
 }
 void Game::decreaseHalfTime() {
