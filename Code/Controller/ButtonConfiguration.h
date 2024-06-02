@@ -1,40 +1,51 @@
 #include <SmartButton.h>
 
+constexpr int BTN_HOME_INCREASE_PIN = 3;
+constexpr int BTN_HOME_DECREASE_PIN = 4;
+constexpr int BTN_AWAY_INCREASE_PIN = 5;
+constexpr int BTN_AWAY_DECREASE_PIN = 6;
+constexpr int BTN_HALFTIME_INCREASE_PIN = 7;
+constexpr int BTN_HALFTIME_DECREASE_PIN = 8;
+
+constexpr int BTN_TIME_3_PIN = 7;
+constexpr int BTN_TIME_5__PIN = 7;
+constexpr int BTN_TIME_7_5_PIN = 7;
+constexpr int BTN_TIME_10__PIN = 7;
+
+constexpr int BTN_SHOTCLOCK_RESET_PIN = 7;
+constexpr int BTN_PLAY_PAUSE_PIN = 7;
+
 using namespace smartbutton;
+using ClickAction = void (*)(void);
 
 /**
 * This is a small wrapper class to ease the usage of the SmartButton-Api.
-* It offers the possibility to define a button's function via lambdas for single click, long press and long press repeat events.
+* It offers the possibility to define a button's behavior via lambdas for single click, long press and long press repeat events.
 */
 class GenericButtonConfiguration : public SmartButtonInterface {
-  using ClickAction = void (*)(void);
+
 public:
   GenericButtonConfiguration(
-    int pin, ClickAction singleClickAction, ClickAction longPressRepeatAction = []() {}, ClickAction longPressAction = []() {}) {
-    _pin = pin;
-    _singleClickAction = singleClickAction;
-    _longPressRepeatAction = longPressRepeatAction;
-    _longPressAction = longPressAction;
-  }
-  virtual void event(SmartButton *button, SmartButton::Event event, int clickCounter) {
-    if (event == SmartButton::Event::CLICK) {
-      if (clickCounter == 1) {
-        _singleClickAction();
-      }
-    } else if (event == SmartButton::Event::HOLD) {
-      _longPressAction();
-    } else if (event == SmartButton::Event::HOLD_REPEAT || event == SmartButton::Event::LONG_HOLD_REPEAT) {
-      _longPressRepeatAction();
-    }
-  }
+    int pin, ClickAction singleClickAction, ClickAction longPressRepeatAction = []() {}, ClickAction longPressAction = []() {});
+  virtual void event(SmartButton *button, SmartButton::Event event, int clickCounter);
 
-  virtual bool isPressed(SmartButton *button) {
-    return (digitalRead(_pin) == LOW) ? true : false;
-  }
+  virtual bool isPressed(SmartButton *button);
 
 private:
   int _pin;
   ClickAction _singleClickAction;
   ClickAction _longPressRepeatAction;
   ClickAction _longPressAction;
+};
+
+class SingleClickButtonConfiguration : public GenericButtonConfiguration {
+public:
+  SingleClickButtonConfiguration(int pin, ClickAction singleClickAction)
+    : GenericButtonConfiguration(pin, singleClickAction, []() {}, []() {}) {}
+};
+
+class SingleClickRepeatButtonConfiguration : public GenericButtonConfiguration {
+public:
+  SingleClickRepeatButtonConfiguration(int pin, ClickAction singleClickAction)
+    : GenericButtonConfiguration(pin, singleClickAction, singleClickAction, []() {}) {}
 };

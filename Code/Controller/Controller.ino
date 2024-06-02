@@ -6,15 +6,15 @@
 #include "Game.h"
 #include "Utils.h"
 
+using namespace smartbutton;
+
 constexpr int INDICATOR_LED_PIN = 1;
-constexpr int BTN_AWAY_INCREASE_PIN = 7;
 
 RF24 radio(9, 10);                // CE, CSN
 MainDisplayData mainDisplayData;  //datastructure sent to the main display
 ShotclockData shotclockData;      //datastructure sent to the shotclock displays
 Game game;
 
-using namespace smartbutton;
 
 void onDataChangedCallback() {
   mainDisplayData.homeScore = game.getHomeScore();
@@ -48,32 +48,69 @@ void send() {
   }
 }
 
+GenericButtonConfiguration homeScoreIncrease = SingleClickRepeatButtonConfiguration(
+  BTN_HOME_INCREASE_PIN, []() {
+    game.increaseHomeScore();
+  });
 
+GenericButtonConfiguration homeScoreDecrease = SingleClickRepeatButtonConfiguration(
+  BTN_HOME_DECREASE_PIN, []() {
+    game.decreaseHomeScore();
+  });
 
-GenericButtonConfiguration awayScoreIncrease = GenericButtonConfiguration(
+GenericButtonConfiguration awayScoreIncrease = SingleClickRepeatButtonConfiguration(
   BTN_AWAY_INCREASE_PIN, []() {
-    game.increaseAwayScore();
-  },
-  []() {
     game.increaseAwayScore();
   });
 
+GenericButtonConfiguration awayScoreDecrease = SingleClickRepeatButtonConfiguration(
+  BTN_AWAY_DECREASE_PIN, []() {
+    game.decreaseAwayScore();
+  });
 
+  GenericButtonConfiguration halfTimeIncrease = SingleClickRepeatButtonConfiguration(
+  BTN_HALFTIME_INCREASE_PIN, []() {
+    game.increaseHalfTime();
+  });
+
+GenericButtonConfiguration halfTimeDecrease = SingleClickRepeatButtonConfiguration(
+  BTN_HALFTIME_DECREASE_PIN, []() {
+    game.decreaseHalfTime();
+  });
+
+
+SmartButton btnHomeIncrease(&homeScoreIncrease);
+SmartButton btnHomeDecrease(&homeScoreDecrease);
 SmartButton btnAwayIncrease(&awayScoreIncrease);
+SmartButton btnAwayDecrease(&awayScoreDecrease);
+SmartButton btnHalftimeIncease(&halfTimeIncrease);
+SmartButton btnHalftimeDecrease(&halfTimeDecrease);
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
+  pinMode(BTN_HOME_INCREASE_PIN, INPUT_PULLUP);
+  pinMode(BTN_HOME_DECREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_AWAY_INCREASE_PIN, INPUT_PULLUP);
+  pinMode(BTN_AWAY_DECREASE_PIN, INPUT_PULLUP);
+  pinMode(BTN_HALFTIME_INCREASE_PIN, INPUT_PULLUP);
+  pinMode(BTN_HALFTIME_DECREASE_PIN, INPUT_PULLUP);
+
   digitalWrite(INDICATOR_LED_PIN, LOW);
 
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
+  // radio.setChannel(CHANNEL_SYSTEM_1);
   radio.setPALevel(RF24_PA_MAX);
   radio.setDataRate(RF24_250KBPS);
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
+  btnHomeIncrease.begin();
+  btnHomeDecrease.begin();
   btnAwayIncrease.begin();
+  btnAwayDecrease.begin();
+  btnHalftimeIncease.begin();
+  btnHalftimeDecrease.begin();
 }
 
 void loop() {

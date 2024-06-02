@@ -58,11 +58,13 @@ void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
 void Game::increaseHomeScore() {
   if (_homeScore < 99) {
     _homeScore++;
+    _callback();
   }
 }
 void Game::decreaseHomeScore() {
   if (_homeScore > 0) {
     _homeScore--;
+    _callback();
   }
 }
 void Game::increaseAwayScore() {
@@ -80,11 +82,13 @@ void Game::decreaseAwayScore() {
 void Game::decreaseHalfTime() {
   if (_halfTime > 1) {
     _halfTime--;
+    _callback();
   }
 }
 void Game::increaseHalfTime() {
   if (_halfTime < 9) {
     _halfTime++;
+    _callback();
   }
 }
 void Game::pause() {
