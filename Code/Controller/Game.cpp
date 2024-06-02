@@ -54,6 +54,7 @@ void Game::loop() {
 
 void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeLeftToPlay = timeInSeconds;
+  _callback();
 }
 void Game::increaseHomeScore() {
   if (_homeScore < 99) {

@@ -68,7 +68,7 @@ GenericButtonConfiguration awayScoreDecrease = SingleClickRepeatButtonConfigurat
     game.decreaseAwayScore();
   });
 
-  GenericButtonConfiguration halfTimeIncrease = SingleClickRepeatButtonConfiguration(
+GenericButtonConfiguration halfTimeIncrease = SingleClickRepeatButtonConfiguration(
   BTN_HALFTIME_INCREASE_PIN, []() {
     game.increaseHalfTime();
   });
@@ -78,6 +78,25 @@ GenericButtonConfiguration halfTimeDecrease = SingleClickRepeatButtonConfigurati
     game.decreaseHalfTime();
   });
 
+GenericButtonConfiguration time10Min = SingleClickButtonConfiguration(
+  BTN_TIME_10_PIN, []() {
+    game.setTimeLeftToPlay(10 * 60);
+  });
+GenericButtonConfiguration time7_5Min = SingleClickButtonConfiguration(
+  BTN_TIME_7_5_PIN, []() {
+    game.setTimeLeftToPlay(7 * 60 + 30);
+  });
+
+GenericButtonConfiguration time5Min = SingleClickButtonConfiguration(
+  BTN_TIME_5_PIN, []() {
+    game.setTimeLeftToPlay(5 * 60);
+  });
+
+GenericButtonConfiguration time3Min = SingleClickButtonConfiguration(
+  BTN_TIME_3_PIN, []() {
+    game.setTimeLeftToPlay(3 * 60);
+  });
+
 
 SmartButton btnHomeIncrease(&homeScoreIncrease);
 SmartButton btnHomeDecrease(&homeScoreDecrease);
@@ -85,6 +104,10 @@ SmartButton btnAwayIncrease(&awayScoreIncrease);
 SmartButton btnAwayDecrease(&awayScoreDecrease);
 SmartButton btnHalftimeIncease(&halfTimeIncrease);
 SmartButton btnHalftimeDecrease(&halfTimeDecrease);
+SmartButton btnTime10(&time10Min);
+SmartButton btnTime7_5(&time7_5Min);
+SmartButton btnTime5(&time5Min);
+SmartButton btnTime3(&time3Min);
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
@@ -94,6 +117,11 @@ void setup() {
   pinMode(BTN_AWAY_DECREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_HALFTIME_INCREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_HALFTIME_DECREASE_PIN, INPUT_PULLUP);
+
+  pinMode(BTN_TIME_10_PIN, INPUT_PULLUP);
+  pinMode(BTN_TIME_7_5_PIN, INPUT_PULLUP);
+  pinMode(BTN_TIME_5_PIN, INPUT_PULLUP);
+  pinMode(BTN_TIME_3_PIN, INPUT_PULLUP);
 
   digitalWrite(INDICATOR_LED_PIN, LOW);
 
@@ -111,6 +139,11 @@ void setup() {
   btnAwayDecrease.begin();
   btnHalftimeIncease.begin();
   btnHalftimeDecrease.begin();
+
+  btnTime10.begin();
+  btnTime7_5.begin();
+  btnTime5.begin();
+  btnTime3.begin();
 }
 
 void loop() {
