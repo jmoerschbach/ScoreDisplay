@@ -20,6 +20,7 @@ struct MainDisplayData {
 struct ShotclockData {
   uint8_t secondsToShot = 0;
   bool enabled = true;
+  bool beep = false;
   CRGB timeColor = CRGB::Red;
   uint8_t brightness = 128;
 };
