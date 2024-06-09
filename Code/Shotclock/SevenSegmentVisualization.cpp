@@ -5,10 +5,11 @@
 void SevenSegmentVisualization::begin() {
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_TIME, GRB>(_timeLeds, NUMBER_LEDS_TIME);
 
-  FastLED.setBrightness(60);
+
 }
 void SevenSegmentVisualization::visualize(const ShotclockData& data) {
   updateTime(data);
+  FastLED.setBrightness(data.brightness);
   FastLED.show();
 }
 
