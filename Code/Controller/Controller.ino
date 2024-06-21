@@ -17,13 +17,14 @@ Game game;
 
 
 void onDataChangedCallback() {
+  // mainDisplayData.brightness = 255;
   mainDisplayData.homeScore = game.getHomeScore();
   mainDisplayData.awayScore = game.getAwayScore();
   mainDisplayData.secondsToPlay = game.getTimeLeftToPlay();
   mainDisplayData.halftime = game.getHalfTime();
 
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
-  // shotclockData.enabled = game.getTimeLeftToShoot() != 55;
+  shotclockData.enabled = game.isShotclockEnabled();
 
   send();
 }
@@ -51,6 +52,14 @@ void send() {
 GenericButtonConfiguration playPause = SingleClickButtonConfiguration(
   BTN_PLAY_PAUSE_PIN, []() {
     game.playPause();
+  });
+
+GenericButtonConfiguration shotClock = GenericButtonConfiguration(
+  BTN_SHOTCLOCK_RESET_PIN, []() {
+    game.setTimeLeftToShoot(60);
+  },
+  []() {}, []() {
+    game.toggleShotclock();
   });
 
 GenericButtonConfiguration homeScoreIncrease = SingleClickRepeatButtonConfiguration(
@@ -105,6 +114,7 @@ GenericButtonConfiguration time3Min = SingleClickButtonConfiguration(
 
 
 SmartButton btnPlayPause(&playPause);
+SmartButton btnShotclockReset(&shotClock);
 SmartButton btnHomeIncrease(&homeScoreIncrease);
 SmartButton btnHomeDecrease(&homeScoreDecrease);
 SmartButton btnAwayIncrease(&awayScoreIncrease);
@@ -118,6 +128,7 @@ SmartButton btnTime3(&time3Min);
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
+  pinMode(BTN_SHOTCLOCK_RESET_PIN, INPUT_PULLUP);
   pinMode(BTN_PLAY_PAUSE_PIN, INPUT_PULLUP);
   pinMode(BTN_HOME_INCREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_HOME_DECREASE_PIN, INPUT_PULLUP);
@@ -142,6 +153,7 @@ void setup() {
 
   game.begin(onDataChangedCallback);
   btnPlayPause.begin();
+  btnShotclockReset.begin();
   btnHomeIncrease.begin();
   btnHomeDecrease.begin();
   btnAwayIncrease.begin();

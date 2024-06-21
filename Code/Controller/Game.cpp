@@ -39,6 +39,7 @@ Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
   _homeScore = 0;
   _halfTime = 1;
   _isPaused = true;
+  _isShotclockEnabled = true;
 }
 
 void Game::begin(OnDataChanged callback) {
@@ -65,7 +66,7 @@ void Game::on1000msPassed() {
     if (_timeLeftToPlay > 0) {
       _timeLeftToPlay--;
     }
-    if (_timeLeftToShoot > 0) {
+    if (_isShotclockEnabled && _timeLeftToShoot > 0) {
       _timeLeftToShoot--;
     }
     _callback();
@@ -76,12 +77,19 @@ void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeLeftToPlay = timeInSeconds;
   _callback();
 }
+
+void Game::setTimeLeftToShoot(uint8_t timeInSeconds) {
+  _timeLeftToShoot = timeInSeconds;
+  _callback();
+}
+
 void Game::increaseHomeScore() {
   if (_homeScore < 99) {
     _homeScore++;
     _callback();
   }
 }
+
 void Game::decreaseHomeScore() {
   if (_homeScore > 0) {
     _homeScore--;
@@ -112,8 +120,14 @@ void Game::increaseHalfTime() {
     _callback();
   }
 }
+
 void Game::playPause() {
   _isPaused = !_isPaused;
+}
+
+void Game::toggleShotclock() {
+  _isShotclockEnabled = !_isShotclockEnabled;
+  _callback();
 }
 
 uint16_t Game::getTimeLeftToPlay() {
@@ -134,4 +148,8 @@ uint8_t Game::getHalfTime() {
 
 uint8_t Game::getTimeLeftToShoot() {
   return _timeLeftToShoot;
+}
+
+bool Game::isShotclockEnabled() {
+  return _isShotclockEnabled;
 }

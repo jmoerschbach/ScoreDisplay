@@ -8,6 +8,7 @@ public:
   Game(uint16_t gameTimeInSeconds = 10 * 60, uint8_t shotclockTimeInSeconds = 60);
   void begin(OnDataChanged callback);
   void setTimeLeftToPlay(uint16_t timeInSeconds);
+  void setTimeLeftToShoot(uint8_t timeInSeconds);
   void increaseHomeScore();
   void decreaseHomeScore();
   void increaseAwayScore();
@@ -15,6 +16,7 @@ public:
   void increaseHalfTime();
   void decreaseHalfTime();
   void playPause();
+  void toggleShotclock();
 
   void loop();
   void on1000msPassed();
@@ -25,6 +27,7 @@ public:
   uint8_t getHalfTime();
   uint16_t getTimeLeftToPlay();
   uint8_t getTimeLeftToShoot();
+  bool isShotclockEnabled();
 
 private:
   OnDataChanged _callback;
@@ -34,6 +37,7 @@ private:
   uint8_t _awayScore;
   uint8_t _halfTime;
   bool _isPaused;
+  bool _isShotclockEnabled;
 };
 
 #endif

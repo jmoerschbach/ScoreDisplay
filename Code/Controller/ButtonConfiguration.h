@@ -12,7 +12,7 @@ constexpr int BTN_TIME_5_PIN = A2;
 constexpr int BTN_TIME_7_5_PIN = A5;
 constexpr int BTN_TIME_10_PIN = A4;
 
-constexpr int BTN_SHOTCLOCK_RESET_PIN = 7;
+constexpr int BTN_SHOTCLOCK_RESET_PIN = A1;
 constexpr int BTN_PLAY_PAUSE_PIN = 2;
 
 using namespace smartbutton;
