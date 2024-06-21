@@ -14,10 +14,11 @@ public:
   void decreaseAwayScore();
   void increaseHalfTime();
   void decreaseHalfTime();
-  void pause();
-  void resume();
+  void playPause();
 
   void loop();
+  void on1000msPassed();
+  void on100msPassed();
 
   uint8_t getHomeScore();
   uint8_t getAwayScore();
@@ -32,6 +33,7 @@ private:
   uint8_t _homeScore;
   uint8_t _awayScore;
   uint8_t _halfTime;
+  bool _isPaused;
 };
 
 #endif

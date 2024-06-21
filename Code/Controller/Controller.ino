@@ -48,6 +48,11 @@ void send() {
   }
 }
 
+GenericButtonConfiguration playPause = SingleClickButtonConfiguration(
+  BTN_PLAY_PAUSE_PIN, []() {
+    game.playPause();
+  });
+
 GenericButtonConfiguration homeScoreIncrease = SingleClickRepeatButtonConfiguration(
   BTN_HOME_INCREASE_PIN, []() {
     game.increaseHomeScore();
@@ -82,6 +87,7 @@ GenericButtonConfiguration time10Min = SingleClickButtonConfiguration(
   BTN_TIME_10_PIN, []() {
     game.setTimeLeftToPlay(10 * 60);
   });
+
 GenericButtonConfiguration time7_5Min = SingleClickButtonConfiguration(
   BTN_TIME_7_5_PIN, []() {
     game.setTimeLeftToPlay(7 * 60 + 30);
@@ -98,6 +104,7 @@ GenericButtonConfiguration time3Min = SingleClickButtonConfiguration(
   });
 
 
+SmartButton btnPlayPause(&playPause);
 SmartButton btnHomeIncrease(&homeScoreIncrease);
 SmartButton btnHomeDecrease(&homeScoreDecrease);
 SmartButton btnAwayIncrease(&awayScoreIncrease);
@@ -111,6 +118,7 @@ SmartButton btnTime3(&time3Min);
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
+  pinMode(BTN_PLAY_PAUSE_PIN, INPUT_PULLUP);
   pinMode(BTN_HOME_INCREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_HOME_DECREASE_PIN, INPUT_PULLUP);
   pinMode(BTN_AWAY_INCREASE_PIN, INPUT_PULLUP);
@@ -133,6 +141,7 @@ void setup() {
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
+  btnPlayPause.begin();
   btnHomeIncrease.begin();
   btnHomeDecrease.begin();
   btnAwayIncrease.begin();

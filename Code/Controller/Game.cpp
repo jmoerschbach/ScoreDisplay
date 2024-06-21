@@ -1,28 +1,35 @@
 #include "Game.h"
-#define PRELOAD_VALUE (65535 - 15625)
 
-volatile uint8_t tick = 0;
 
-ISR(TIMER1_OVF_vect) {
-  TCNT1 = PRELOAD_VALUE;
-  tick = 1;
+constexpr int COMPARE_MATCH_1s = 62500;    // 1 * CLK_FREQ / PRESCALER ;
+constexpr int COMPARE_MATCH_100ms = 6250;  // 0.1 * CLK_FREQ / PRESCALER;
+
+volatile bool tick_1s = false;
+volatile bool tick_100ms = false;
+
+
+ISR(TIMER1_COMPA_vect) {
+  OCR1A += COMPARE_MATCH_100ms;
+  tick_100ms = true;
 }
+
+ISR(TIMER1_COMPB_vect) {
+  OCR1B += COMPARE_MATCH_1s;
+  tick_1s = true;
+}
+
 
 void configureTimer() {
   cli();
   TCCR1A = 0;
   TCCR1B = 0;
-  TCNT1 = PRELOAD_VALUE;   // preload counter value for 1Hz
-  TIMSK1 |= (1 << TOIE1);  // enable timer overflow interrupt
+
+  TCCR1B |= B00000100;          // Prescaler = 256
+  OCR1A = COMPARE_MATCH_100ms;  // Timer Compare1A Register
+  TIMSK1 |= B00000010;          // Enable Timer COMPA Interrupt
+  OCR1B = COMPARE_MATCH_1s;     // Timer Compare1B Register
+  TIMSK1 |= B00000100;          // Enable Timer COMPB Interrupt
   sei();
-}
-
-void startTimer() {
-  TCCR1B |= (1 << CS12) | (1 << CS10);  // Set prescaler to 1024 which starts the timer
-}
-
-void stopTimer() {
-  TCCR1B &= ~(1 << CS12) & ~(1 << CS10);  // Unset prescaler to stop the timer
 }
 
 Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
@@ -31,17 +38,30 @@ Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
   _awayScore = 0;
   _homeScore = 0;
   _halfTime = 1;
+  _isPaused = true;
 }
 
 void Game::begin(OnDataChanged callback) {
   _callback = callback;
   configureTimer();
-  startTimer();
 }
 
 void Game::loop() {
-  if (tick) {
-    tick = 0;
+  if (tick_100ms) {
+    tick_100ms = false;
+    on100msPassed();
+  }
+  if (tick_1s) {
+    tick_1s = false;
+    on1000msPassed();
+  }
+}
+
+void Game::on100msPassed() {
+}
+
+void Game::on1000msPassed() {
+  if (!_isPaused) {
     if (_timeLeftToPlay > 0) {
       _timeLeftToPlay--;
     }
@@ -92,11 +112,8 @@ void Game::increaseHalfTime() {
     _callback();
   }
 }
-void Game::pause() {
-  stopTimer();
-}
-void Game::resume() {
-  startTimer();
+void Game::playPause() {
+  _isPaused = !_isPaused;
 }
 
 uint16_t Game::getTimeLeftToPlay() {
