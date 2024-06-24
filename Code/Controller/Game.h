@@ -16,18 +16,20 @@ public:
   void increaseHalfTime();
   void decreaseHalfTime();
   void playPause();
-  void toggleShotclock();
+  void enableDisableShotclock();
 
   void loop();
   void on1000msPassed();
-  void on100msPassed();
+  void on200msPassed();
 
   uint8_t getHomeScore();
   uint8_t getAwayScore();
   uint8_t getHalfTime();
   uint16_t getTimeLeftToPlay();
   uint8_t getTimeLeftToShoot();
-  bool isShotclockEnabled();
+  bool shouldShotclockBeep();
+  bool isShotclockVisible();
+  bool isShotclockBeep();
 
 private:
   OnDataChanged _callback;
@@ -38,6 +40,10 @@ private:
   uint8_t _halfTime;
   bool _isPaused;
   bool _isShotclockEnabled;
+  bool _showShotclock;
+  uint8_t _shotclockBlinkCounter;
+  bool _shotClockBeep;
+  bool _shotclockHasAlreadyBeeped;
 };
 
 #endif

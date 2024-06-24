@@ -9,6 +9,7 @@
 using namespace smartbutton;
 
 constexpr int INDICATOR_LED_PIN = 1;
+constexpr int BUZZER_PIN = A0;
 
 RF24 radio(9, 10);                // CE, CSN
 MainDisplayData mainDisplayData;  //datastructure sent to the main display
@@ -24,7 +25,8 @@ void onDataChangedCallback() {
   mainDisplayData.halftime = game.getHalfTime();
 
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
-  shotclockData.enabled = game.isShotclockEnabled();
+  shotclockData.enabled = game.isShotclockVisible();
+  shotclockData.beep = game.isShotclockBeep();
 
   send();
 }
@@ -59,7 +61,7 @@ GenericButtonConfiguration shotClock = GenericButtonConfiguration(
     game.setTimeLeftToShoot(60);
   },
   []() {}, []() {
-    game.toggleShotclock();
+    game.enableDisableShotclock();
   });
 
 GenericButtonConfiguration homeScoreIncrease = SingleClickRepeatButtonConfiguration(
@@ -128,6 +130,7 @@ SmartButton btnTime3(&time3Min);
 
 void setup() {
   pinMode(INDICATOR_LED_PIN, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
   pinMode(BTN_SHOTCLOCK_RESET_PIN, INPUT_PULLUP);
   pinMode(BTN_PLAY_PAUSE_PIN, INPUT_PULLUP);
   pinMode(BTN_HOME_INCREASE_PIN, INPUT_PULLUP);
@@ -143,6 +146,7 @@ void setup() {
   pinMode(BTN_TIME_3_PIN, INPUT_PULLUP);
 
   digitalWrite(INDICATOR_LED_PIN, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
 
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
