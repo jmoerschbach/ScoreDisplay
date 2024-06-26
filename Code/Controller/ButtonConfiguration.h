@@ -18,6 +18,7 @@ constexpr int BTN_PLAY_PAUSE_PIN = 2;
 using namespace smartbutton;
 using ClickAction = void (*)(void);
 
+
 /**
 * This is a small wrapper class to ease the usage of the SmartButton-Api.
 * It offers the possibility to define a button's behavior via lambdas for single click, long press and long press repeat events.
@@ -55,3 +56,5 @@ public:
   SingleClickRepeatButtonConfiguration(int pin, ClickAction singleClickAction)
     : GenericButtonConfiguration(pin, singleClickAction, singleClickAction, []() {}) {}
 };
+
+void configureButtons();
