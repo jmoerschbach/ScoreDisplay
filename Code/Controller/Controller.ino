@@ -1,14 +1,12 @@
 #include <Arduino.h>
 #include <RF24.h>
-#include <SmartButton.h>
 #include "ButtonConfiguration.h"
 #include "DataPackages.h"
 #include "Game.h"
 #include "Utils.h"
 
-using namespace smartbutton;
-
 constexpr int INDICATOR_LED_PIN = 1;
+constexpr int BUZZER_PIN = A0;
 
 RF24 radio(9, 10);                // CE, CSN
 MainDisplayData mainDisplayData;  //datastructure sent to the main display
@@ -17,13 +15,15 @@ Game game;
 
 
 void onDataChangedCallback() {
+  // mainDisplayData.brightness = 255;
   mainDisplayData.homeScore = game.getHomeScore();
   mainDisplayData.awayScore = game.getAwayScore();
   mainDisplayData.secondsToPlay = game.getTimeLeftToPlay();
   mainDisplayData.halftime = game.getHalfTime();
 
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
-  // shotclockData.enabled = game.getTimeLeftToShoot() != 55;
+  shotclockData.enabled = game.isShotclockVisible();
+  shotclockData.beep = game.isShotclockBeep();
 
   send();
 }
@@ -48,82 +48,14 @@ void send() {
   }
 }
 
-GenericButtonConfiguration homeScoreIncrease = SingleClickRepeatButtonConfiguration(
-  BTN_HOME_INCREASE_PIN, []() {
-    game.increaseHomeScore();
-  });
-
-GenericButtonConfiguration homeScoreDecrease = SingleClickRepeatButtonConfiguration(
-  BTN_HOME_DECREASE_PIN, []() {
-    game.decreaseHomeScore();
-  });
-
-GenericButtonConfiguration awayScoreIncrease = SingleClickRepeatButtonConfiguration(
-  BTN_AWAY_INCREASE_PIN, []() {
-    game.increaseAwayScore();
-  });
-
-GenericButtonConfiguration awayScoreDecrease = SingleClickRepeatButtonConfiguration(
-  BTN_AWAY_DECREASE_PIN, []() {
-    game.decreaseAwayScore();
-  });
-
-GenericButtonConfiguration halfTimeIncrease = SingleClickRepeatButtonConfiguration(
-  BTN_HALFTIME_INCREASE_PIN, []() {
-    game.increaseHalfTime();
-  });
-
-GenericButtonConfiguration halfTimeDecrease = SingleClickRepeatButtonConfiguration(
-  BTN_HALFTIME_DECREASE_PIN, []() {
-    game.decreaseHalfTime();
-  });
-
-GenericButtonConfiguration time10Min = SingleClickButtonConfiguration(
-  BTN_TIME_10_PIN, []() {
-    game.setTimeLeftToPlay(10 * 60);
-  });
-GenericButtonConfiguration time7_5Min = SingleClickButtonConfiguration(
-  BTN_TIME_7_5_PIN, []() {
-    game.setTimeLeftToPlay(7 * 60 + 30);
-  });
-
-GenericButtonConfiguration time5Min = SingleClickButtonConfiguration(
-  BTN_TIME_5_PIN, []() {
-    game.setTimeLeftToPlay(5 * 60);
-  });
-
-GenericButtonConfiguration time3Min = SingleClickButtonConfiguration(
-  BTN_TIME_3_PIN, []() {
-    game.setTimeLeftToPlay(3 * 60);
-  });
-
-
-SmartButton btnHomeIncrease(&homeScoreIncrease);
-SmartButton btnHomeDecrease(&homeScoreDecrease);
-SmartButton btnAwayIncrease(&awayScoreIncrease);
-SmartButton btnAwayDecrease(&awayScoreDecrease);
-SmartButton btnHalftimeIncease(&halfTimeIncrease);
-SmartButton btnHalftimeDecrease(&halfTimeDecrease);
-SmartButton btnTime10(&time10Min);
-SmartButton btnTime7_5(&time7_5Min);
-SmartButton btnTime5(&time5Min);
-SmartButton btnTime3(&time3Min);
-
 void setup() {
+  configureButtons();
   pinMode(INDICATOR_LED_PIN, OUTPUT);
-  pinMode(BTN_HOME_INCREASE_PIN, INPUT_PULLUP);
-  pinMode(BTN_HOME_DECREASE_PIN, INPUT_PULLUP);
-  pinMode(BTN_AWAY_INCREASE_PIN, INPUT_PULLUP);
-  pinMode(BTN_AWAY_DECREASE_PIN, INPUT_PULLUP);
-  pinMode(BTN_HALFTIME_INCREASE_PIN, INPUT_PULLUP);
-  pinMode(BTN_HALFTIME_DECREASE_PIN, INPUT_PULLUP);
+  pinMode(BUZZER_PIN, OUTPUT);
 
-  pinMode(BTN_TIME_10_PIN, INPUT_PULLUP);
-  pinMode(BTN_TIME_7_5_PIN, INPUT_PULLUP);
-  pinMode(BTN_TIME_5_PIN, INPUT_PULLUP);
-  pinMode(BTN_TIME_3_PIN, INPUT_PULLUP);
 
   digitalWrite(INDICATOR_LED_PIN, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
 
   radio.begin();
   radio.setChannel(CHANNEL_SYSTEM_0);
@@ -133,17 +65,7 @@ void setup() {
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
-  btnHomeIncrease.begin();
-  btnHomeDecrease.begin();
-  btnAwayIncrease.begin();
-  btnAwayDecrease.begin();
-  btnHalftimeIncease.begin();
-  btnHalftimeDecrease.begin();
 
-  btnTime10.begin();
-  btnTime7_5.begin();
-  btnTime5.begin();
-  btnTime3.begin();
 }
 
 void loop() {
