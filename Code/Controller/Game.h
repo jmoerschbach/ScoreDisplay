@@ -1,6 +1,7 @@
 #ifndef _GAME_h
 #define _GAME_h
 #include <Arduino.h>
+#include "ShotclockLogic.h"
 
 using OnDataChanged = void (*)(void);
 class Game {
@@ -33,17 +34,13 @@ public:
 
 private:
   OnDataChanged _callback;
+  Shotclock shotclock;
   uint16_t _timeLeftToPlay;
   uint8_t _timeLeftToShoot;
   uint8_t _homeScore;
   uint8_t _awayScore;
   uint8_t _halfTime;
   bool _isPaused;
-  bool _isShotclockEnabled;
-  bool _showShotclock;
-  uint8_t _shotclockBlinkCounter;
-  bool _shotClockBeep;
-  bool _shotclockHasAlreadyBeeped;
 };
 
 #endif
