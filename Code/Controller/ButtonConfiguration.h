@@ -1,3 +1,5 @@
+#ifndef _BUTTONCONFIGURATION_h
+#define _BUTTONCONFIGURATION_h
 #include <SmartButton.h>
 
 constexpr int BTN_HOME_INCREASE_PIN = 3;
@@ -58,3 +60,5 @@ public:
 };
 
 void configureButtons();
+
+#endif
