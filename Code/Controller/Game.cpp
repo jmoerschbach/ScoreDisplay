@@ -32,11 +32,8 @@ void configureTimer() {
 }
 
 Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
-  shotclock.setTimeLeftToShoot(shotclockTimeInSeconds);
-  _timeLeftToPlay = gameTimeInSeconds;
-  _awayScore = 0;
-  _homeScore = 0;
-  _halfTime = 1;
+  _shotclock.setTimeLeftToShoot(shotclockTimeInSeconds);
+  _timeScore.setTimeLeftToPlay(gameTimeInSeconds);
   _isPaused = true;
 }
 
@@ -57,66 +54,52 @@ void Game::loop() {
 }
 
 void Game::on200msPassed() {
-  shotclock.on200msPassed();
+  _shotclock.on200msPassed();
   _callback();
 }
 
 void Game::on1000msPassed() {
   if (!_isPaused) {
-    if (_timeLeftToPlay > 0) {
-      _timeLeftToPlay--;
-    }
-    shotclock.on1000msPassed();
+    _timeScore.on1000msPassed();
+    _shotclock.on1000msPassed();
     _callback();
   }
 }
 
 void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
-  _timeLeftToPlay = timeInSeconds;
+  _timeScore.setTimeLeftToPlay(timeInSeconds);
   _callback();
 }
 
 void Game::setTimeLeftToShoot(uint8_t timeInSeconds) {
-  shotclock.setTimeLeftToShoot(timeInSeconds);
+  _shotclock.setTimeLeftToShoot(timeInSeconds);
   _callback();
 }
 
 void Game::increaseHomeScore() {
-  if (_homeScore < 99) {
-    _homeScore++;
-    _callback();
-  }
+  _timeScore.increaseHomeScore();
+  _callback();
 }
 
 void Game::decreaseHomeScore() {
-  if (_homeScore > 0) {
-    _homeScore--;
-    _callback();
-  }
+  _timeScore.decreaseHomeScore();
+  _callback();
 }
 void Game::increaseAwayScore() {
-  if (_awayScore < 99) {
-    _awayScore++;
-    _callback();
-  }
+  _timeScore.increaseAwayScore();
+  _callback();
 }
 void Game::decreaseAwayScore() {
-  if (_awayScore > 0) {
-    _awayScore--;
-    _callback();
-  }
+  _timeScore.decreaseAwayScore();
+  _callback();
 }
 void Game::decreaseHalfTime() {
-  if (_halfTime > 1) {
-    _halfTime--;
-    _callback();
-  }
+  _timeScore.decreaseHalfTime();
+  _callback();
 }
 void Game::increaseHalfTime() {
-  if (_halfTime < 9) {
-    _halfTime++;
-    _callback();
-  }
+  _timeScore.increaseHalfTime();
+  _callback();
 }
 
 void Game::playPause() {
@@ -124,34 +107,34 @@ void Game::playPause() {
 }
 
 void Game::enableDisableShotclock() {
-  shotclock.enableDisableShotclock();
+  _shotclock.enableDisableShotclock();
   _callback();
 }
 
 uint16_t Game::getTimeLeftToPlay() {
-  return _timeLeftToPlay;
+  return _timeScore.getTimeLeftToPlay();
 }
 
 uint8_t Game::getHomeScore() {
-  return _homeScore;
+  return _timeScore.getHomeScore();
 }
 
 uint8_t Game::getAwayScore() {
-  return _awayScore;
+  return _timeScore.getAwayScore();
 }
 
 uint8_t Game::getHalfTime() {
-  return _halfTime;
+  return _timeScore.getHalfTime();
 }
 
 uint8_t Game::getTimeLeftToShoot() {
-  return shotclock.getTimeLeftToShoot();
+  return _shotclock.getTimeLeftToShoot();
 }
 
 bool Game::isShotclockVisible() {
-  return shotclock.isShotclockShown();
+  return _shotclock.isShotclockShown();
 }
 
 bool Game::isShotclockBeep() {
-  return shotclock.isShotclockBeeping();
+  return _shotclock.isShotclockBeeping();
 }

@@ -1,6 +1,6 @@
 #ifndef _SHOTCLOCKLOGIC_h
 #define _SHOTCLOCKLOGIC_h
-#include <Arduino.h>
+#include <stdint.h>
 class Shotclock {
 public:
 Shotclock::Shotclock();

@@ -2,6 +2,7 @@
 #define _GAME_h
 #include <Arduino.h>
 #include "ShotclockLogic.h"
+#include "TimeScoreLogic.h"
 
 using OnDataChanged = void (*)(void);
 class Game {
@@ -34,12 +35,8 @@ public:
 
 private:
   OnDataChanged _callback;
-  Shotclock shotclock;
-  uint16_t _timeLeftToPlay;
-  uint8_t _timeLeftToShoot;
-  uint8_t _homeScore;
-  uint8_t _awayScore;
-  uint8_t _halfTime;
+  Shotclock _shotclock;
+  TimeScore _timeScore;
   bool _isPaused;
 };
 
