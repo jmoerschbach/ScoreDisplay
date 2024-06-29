@@ -8,6 +8,7 @@ struct MainDisplayData {
   uint8_t awayScore = 0;
   uint8_t homeScore = 0;
   uint8_t halftime = 0;
+  bool showTime = true;
   bool enabled = true;
   CRGB timeColor = CRGB::Red;
   CRGB awayScoreColor = CRGB::Blue;

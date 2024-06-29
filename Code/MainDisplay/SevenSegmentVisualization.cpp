@@ -1,19 +1,42 @@
+#include <stdint.h>
 #include "SevenSegmentVisualization.h"
 #include "Utils.h"
-#include <Arduino.h>
 
 void SevenSegmentVisualization::begin() {
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_TIME, GRB>(_timeLeds, NUMBER_LEDS_TIME);
   FastLED.addLeds<WS2812B, DATA_PIN_LEDS_SCORE, GRB>(_scoreLeds, NUMBER_LEDS_SCORE);
 }
 void SevenSegmentVisualization::visualize(const MainDisplayData& data) {
-  updateTime(data);
-  updateScoreAndHalftime(data);
-  FastLED.setBrightness(data.brightness);
+  if (!data.enabled) {
+    FastLED.clearData();
+  } else {
+    updateTime(data);
+    updateScoreAndHalftime(data);
+    FastLED.setBrightness(data.brightness);
+  }
   FastLED.show();
 }
 
 void SevenSegmentVisualization::updateTime(const MainDisplayData& data) {
+  if (!data.showTime) {
+    hideTime();
+  } else {
+    showTime(data);
+  }
+}
+
+void SevenSegmentVisualization::hideTime() {
+  _timeDigit_0.hide(&_timeLeds[0 * 7 * LEDS_PER_SEGMENT_TIME]);
+  _timeDigit_1.hide(&_timeLeds[1 * 7 * LEDS_PER_SEGMENT_TIME]);
+  for (uint8_t i = 0; i < 2 * LEDS_PER_DOT; i++) {
+    _timeLeds[2 * 7 * LEDS_PER_SEGMENT_TIME + i] = CRGB::Black;
+  }
+
+  _timeDigit_2.hide(&_timeLeds[2 * 7 * LEDS_PER_SEGMENT_TIME + 2 * LEDS_PER_DOT]);
+  _timeDigit_3.hide(&_timeLeds[3 * 7 * LEDS_PER_SEGMENT_TIME + 2 * LEDS_PER_DOT]);
+}
+
+void SevenSegmentVisualization::showTime(const MainDisplayData& data) {
   uint8_t minutes = data.secondsToPlay / 60;
   uint8_t seconds = data.secondsToPlay - (minutes * 60);
   TwoDigit minuteDigits = convert2DecimalDigit(minutes);

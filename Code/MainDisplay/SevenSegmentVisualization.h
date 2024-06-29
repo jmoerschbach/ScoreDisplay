@@ -1,9 +1,10 @@
 #ifndef _SEVENSEGMENTVISUALIZATION_h
 #define _SEVENSEGMENTVISUALIZATION_h
+
+#include <FastLED.h>
 #include "SevenSegmentDigit.h"
 #include "DataPackages.h"
 #include "Utils.h"
-#include <FastLED.h>
 
 #define LEDS_PER_SEGMENT_TIME 7
 #define LEDS_PER_DOT 2
@@ -25,6 +26,8 @@ public:
 private:
  void updateTime(const MainDisplayData& data);
  void updateScoreAndHalftime(const MainDisplayData& data);
+  void showTime(const MainDisplayData& data);
+  void hideTime();
 
   SevenSegmentDigit _timeDigit_0 = SevenSegmentDigit(LEDS_PER_SEGMENT_TIME);
   SevenSegmentDigit _timeDigit_1 = SevenSegmentDigit(LEDS_PER_SEGMENT_TIME);
