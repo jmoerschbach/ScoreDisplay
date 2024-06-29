@@ -20,6 +20,7 @@ void onDataChangedCallback() {
   mainDisplayData.awayScore = game.getAwayScore();
   mainDisplayData.secondsToPlay = game.getTimeLeftToPlay();
   mainDisplayData.halftime = game.getHalfTime();
+  mainDisplayData.showTime = game.isTimeVisible();
 
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
   shotclockData.enabled = game.isShotclockVisible();

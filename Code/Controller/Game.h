@@ -32,6 +32,7 @@ public:
   bool shouldShotclockBeep();
   bool isShotclockVisible();
   bool isShotclockBeep();
+  bool isTimeVisible();
 
 private:
   OnDataChanged _callback;

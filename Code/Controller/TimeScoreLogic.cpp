@@ -1,7 +1,9 @@
 #include "TimeScoreLogic.h"
 
+constexpr int TIME_BLINKS = 6;
+
 TimeScore::TimeScore()
-  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1) {
+  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1), _showTime(true), _timeBlinkCounter(TIME_BLINKS) {
 }
 
 void TimeScore::on1000msPassed() {
@@ -9,9 +11,20 @@ void TimeScore::on1000msPassed() {
     _timeLeftToPlay--;
   }
 }
+void TimeScore::on200msPassed() {
+  flashIfNeeded();
+}
+void TimeScore::flashIfNeeded() {
+  if ( _timeLeftToPlay == 0 && _timeBlinkCounter > 0) {
+    _showTime = !_showTime;
+    _timeBlinkCounter--;
+  }
+}
 
 void TimeScore::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeLeftToPlay = timeInSeconds;
+  _timeBlinkCounter = TIME_BLINKS;
+  _showTime = true;
 }
 
 void TimeScore::increaseHomeScore() {
@@ -60,4 +73,8 @@ uint8_t TimeScore::getAwayScore() {
 
 uint8_t TimeScore::getHalfTime() {
   return _halfTime;
+}
+
+bool TimeScore::isTimeShown() {
+  return _showTime;
 }

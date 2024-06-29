@@ -55,6 +55,7 @@ void Game::loop() {
 
 void Game::on200msPassed() {
   _shotclock.on200msPassed();
+  _timeScore.on200msPassed();
   _callback();
 }
 
@@ -68,6 +69,7 @@ void Game::on1000msPassed() {
 
 void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeScore.setTimeLeftToPlay(timeInSeconds);
+  _isPaused = true;
   _callback();
 }
 
@@ -137,4 +139,8 @@ bool Game::isShotclockVisible() {
 
 bool Game::isShotclockBeep() {
   return _shotclock.isShotclockBeeping();
+}
+
+bool Game::isTimeVisible() {
+  return _timeScore.isTimeShown();
 }
