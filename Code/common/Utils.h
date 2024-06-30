@@ -1,11 +1,11 @@
 #ifndef _UTILS_H
 #define _UTILS_H
-#include <Arduino.h>
+#include <stdint.h>
 
 
-constexpr byte ADDRESS_SHOTCLOCK_0[6] = "SHOT0";
-constexpr byte ADDRESS_SHOTCLOCK_1[6] = "SHOT1";
-constexpr byte ADDRESS_MAIN_DISPLAY[6] = "MAIN0";
+constexpr uint8_t ADDRESS_SHOTCLOCK_0[6] = "SHOT0";
+constexpr uint8_t ADDRESS_SHOTCLOCK_1[6] = "SHOT1";
+constexpr uint8_t ADDRESS_MAIN_DISPLAY[6] = "MAIN0";
 
 /**
 * This is the frequenzy offset of system 0
@@ -32,4 +32,5 @@ typedef struct TwoDigit {
 } TwoDigit;
 
 TwoDigit convert2DecimalDigit(uint8_t value);
+
 #endif
