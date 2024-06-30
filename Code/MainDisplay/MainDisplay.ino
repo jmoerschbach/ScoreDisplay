@@ -1,4 +1,5 @@
 #include <RF24.h>
+#include "Constants.h"
 #include "SevenSegmentVisualization.h"
 #include "DataPackages.h"
 
@@ -9,7 +10,7 @@ SevenSegmentVisualization visualization;
 MainDisplayData data;
 void setup() {
   radio.begin();
-  radio.setChannel(CHANNEL_SYSTEM_0);
+  radio.setChannel(CHANNEL);
   radio.openReadingPipe(0, ADDRESS_MAIN_DISPLAY);
   radio.setPALevel(RF24_PA_MAX);
   radio.setDataRate(RF24_250KBPS);

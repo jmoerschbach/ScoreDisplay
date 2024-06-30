@@ -2,21 +2,30 @@
 #define _SEVENSEGMENTVISUALIZATION_h
 
 #include <FastLED.h>
+#include "Constants.h"
 #include "SevenSegmentDigit.h"
 #include "DataPackages.h"
 #include "Utils.h"
 
+
+#ifdef V1
 constexpr int LEDS_PER_SEGMENT_TIME = 7;
 constexpr int LEDS_PER_DOT = 2;
-constexpr int NUMBER_DIGITS_TIME = 4;
-constexpr int NUMBER_LEDS_TIME = 7 * LEDS_PER_SEGMENT_TIME * NUMBER_DIGITS_TIME + 2 * LEDS_PER_DOT;
-constexpr int DATA_PIN_LEDS_TIME = A1;
-
 constexpr int LEDS_PER_SEGMENT_SCORE = 6;
 constexpr int LEDS_PER_SEGMENT_HALFTIME = 4;
+#else
+constexpr int LEDS_PER_SEGMENT_TIME = 10;
+constexpr int LEDS_PER_DOT = 3;
+constexpr int LEDS_PER_SEGMENT_SCORE = 8;
+constexpr int LEDS_PER_SEGMENT_HALFTIME = 5;
+#endif
+
+constexpr int NUMBER_DIGITS_TIME = 4;
 constexpr int NUMBER_DIGITS_SCORE = 4;
+constexpr int NUMBER_LEDS_TIME = 7 * LEDS_PER_SEGMENT_TIME * NUMBER_DIGITS_TIME + 2 * LEDS_PER_DOT;
 constexpr int NUMBER_LEDS_SCORE = 7 * LEDS_PER_SEGMENT_SCORE * NUMBER_DIGITS_SCORE + 7 * LEDS_PER_SEGMENT_HALFTIME;
 constexpr int DATA_PIN_LEDS_SCORE = A0;
+constexpr int DATA_PIN_LEDS_TIME = A1;
 
 
 class SevenSegmentVisualization {

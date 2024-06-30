@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <RF24.h>
 #include "ButtonConfiguration.h"
+#include "Constants.h"
 #include "DataPackages.h"
 #include "Game.h"
 #include "Utils.h"
@@ -59,8 +60,7 @@ void setup() {
   digitalWrite(BUZZER_PIN, LOW);
 
   radio.begin();
-  radio.setChannel(CHANNEL_SYSTEM_0);
-  // radio.setChannel(CHANNEL_SYSTEM_1);
+  radio.setChannel(CHANNEL);
   radio.setPALevel(RF24_PA_MAX);
   radio.setDataRate(RF24_250KBPS);
   radio.stopListening();
