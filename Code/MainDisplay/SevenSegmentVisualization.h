@@ -8,7 +8,7 @@
 #include "Utils.h"
 
 
-#ifdef V1
+#ifdef LED_DENSITY_LOW
 constexpr int LEDS_PER_SEGMENT_TIME = 7;
 constexpr int LEDS_PER_DOT = 2;
 constexpr int LEDS_PER_SEGMENT_SCORE = 6;
