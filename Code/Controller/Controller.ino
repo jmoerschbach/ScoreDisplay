@@ -28,6 +28,8 @@ void onDataChangedCallback() {
   shotclockData.beep = game.isShotclockBeep();
 
   send();
+
+  digitalWrite(BUZZER_PIN, game.isBeep());
 }
 
 
@@ -66,7 +68,6 @@ void setup() {
   radio.stopListening();
 
   game.begin(onDataChangedCallback);
-
 }
 
 void loop() {

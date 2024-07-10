@@ -1,9 +1,10 @@
 #ifndef _SHOTCLOCKLOGIC_h
 #define _SHOTCLOCKLOGIC_h
 #include <stdint.h>
+
 class Shotclock {
 public:
-Shotclock::Shotclock();
+  Shotclock::Shotclock();
   void on200msPassed();
   void on1000msPassed();
   void enableDisableShotclock();
@@ -11,7 +12,6 @@ Shotclock::Shotclock();
   uint8_t getTimeLeftToShoot();
   bool isShotclockShown();
   bool isShotclockBeeping();
-
 
 private:
   void flashIfNeeded();

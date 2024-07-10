@@ -7,7 +7,6 @@ public:
   TimeScore::TimeScore();
   void on1000msPassed();
   void on200msPassed();
-  void flashIfNeeded();
   void setTimeLeftToPlay(uint16_t timeInSeconds);
   void increaseHomeScore();
   void decreaseHomeScore();
@@ -21,13 +20,18 @@ public:
   uint8_t getAwayScore();
   uint8_t getHalfTime();
   bool isTimeShown();
+  bool isBeeping();
 private:
+  void flashIfNeeded();
+  void beepIfNeeded();
   uint16_t _timeLeftToPlay;
   uint8_t _homeScore;
   uint8_t _awayScore;
   uint8_t _halfTime;
   bool _showTime;
   uint8_t _timeBlinkCounter;
+  bool _beep;
+  uint8_t _beepCounter;
 };
 
 #endif

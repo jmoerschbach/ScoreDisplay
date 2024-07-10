@@ -31,10 +31,10 @@ void configureTimer() {
   sei();
 }
 
-Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds) {
+Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds)
+  : _isPaused(true) {
   _shotclock.setTimeLeftToShoot(shotclockTimeInSeconds);
   _timeScore.setTimeLeftToPlay(gameTimeInSeconds);
-  _isPaused = true;
 }
 
 void Game::begin(OnDataChanged callback) {
@@ -143,4 +143,8 @@ bool Game::isShotclockBeep() {
 
 bool Game::isTimeVisible() {
   return _timeScore.isTimeShown();
+}
+
+bool Game::isBeep() {
+  return _timeScore.isBeeping();
 }

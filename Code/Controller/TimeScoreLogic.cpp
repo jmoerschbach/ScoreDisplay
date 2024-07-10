@@ -1,9 +1,10 @@
 #include "TimeScoreLogic.h"
 
-constexpr int TIME_BLINKS = 6;
+constexpr int TIME_BLINKS = 8;
+constexpr int TIME_BEEPS = 5;
 
 TimeScore::TimeScore()
-  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1), _showTime(true), _timeBlinkCounter(TIME_BLINKS) {
+  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1), _showTime(true), _timeBlinkCounter(TIME_BLINKS), _beep(false), _beepCounter(TIME_BEEPS) {
 }
 
 void TimeScore::on1000msPassed() {
@@ -13,17 +14,29 @@ void TimeScore::on1000msPassed() {
 }
 void TimeScore::on200msPassed() {
   flashIfNeeded();
+  beepIfNeeded();
 }
 void TimeScore::flashIfNeeded() {
-  if ( _timeLeftToPlay == 0 && _timeBlinkCounter > 0) {
+  if (_timeLeftToPlay == 0 && _timeBlinkCounter > 0) {
     _showTime = !_showTime;
     _timeBlinkCounter--;
+  }
+}
+
+void TimeScore::beepIfNeeded() {
+  if (_timeLeftToPlay == 0 && _beepCounter > 0) {
+    _beep = true;
+    _beepCounter--;
+  } else {
+    _beep = false;
   }
 }
 
 void TimeScore::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeLeftToPlay = timeInSeconds;
   _timeBlinkCounter = TIME_BLINKS;
+  _beepCounter = TIME_BEEPS;
+  _beep = false;
   _showTime = true;
 }
 
@@ -77,4 +90,8 @@ uint8_t TimeScore::getHalfTime() {
 
 bool TimeScore::isTimeShown() {
   return _showTime;
+}
+
+bool TimeScore::isBeeping() {
+  return _beep;
 }
