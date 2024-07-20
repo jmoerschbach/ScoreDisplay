@@ -2,6 +2,8 @@
 #define _TIMESCORELOGIC_h
 #include <stdint.h>
 
+#include "GameMode.h"
+
 class TimeScore {
 public:
   TimeScore::TimeScore();
@@ -14,6 +16,7 @@ public:
   void decreaseAwayScore();
   void decreaseHalfTime();
   void increaseHalfTime();
+  void setMode(GameMode newMode);
 
   uint16_t getTimeLeftToPlay();
   uint8_t getHomeScore();
@@ -32,6 +35,8 @@ private:
   uint8_t _timeBlinkCounter;
   bool _beep;
   uint8_t _beepCounter;
+  uint8_t _manualSettingBlinkCounter;
+  GameMode _mode;
 };
 
 #endif

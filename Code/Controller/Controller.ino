@@ -23,6 +23,11 @@ void onDataChangedCallback() {
   mainDisplayData.halftime = game.getHalfTime();
   mainDisplayData.showTime = game.isTimeVisible();
 
+  mainDisplayData.timeColor = White;
+  mainDisplayData.awayScoreColor = White;
+  mainDisplayData.homeScoreColor = White;
+  mainDisplayData.halftimeColor = Green;
+
   shotclockData.secondsToShot = game.getTimeLeftToShoot();
   shotclockData.enabled = game.isShotclockVisible();
   shotclockData.beep = game.isShotclockBeep();

@@ -24,9 +24,12 @@ bool GenericButtonConfiguration::isPressed(SmartButton *button) {
 }
 
 //########## Button behaviour definition starts here ##########
-GenericButtonConfiguration playPause = SingleClickButtonConfiguration(
+GenericButtonConfiguration playPause = GenericButtonConfiguration(
   BTN_PLAY_PAUSE_PIN, []() {
     game.playPause();
+  },
+  []() {}, []() {
+    game.toggleMode();
   });
 
 GenericButtonConfiguration shotClock = GenericButtonConfiguration(

@@ -3,8 +3,12 @@
 #include <Arduino.h>
 #include "ShotclockLogic.h"
 #include "TimeScoreLogic.h"
+#include "GameMode.h"
 
 using OnDataChanged = void (*)(void);
+
+
+
 class Game {
 public:
   Game(uint16_t gameTimeInSeconds = 10 * 60, uint8_t shotclockTimeInSeconds = 60);
@@ -18,6 +22,7 @@ public:
   void increaseHalfTime();
   void decreaseHalfTime();
   void playPause();
+  void toggleMode();
   void enableDisableShotclock();
 
   void loop();
@@ -37,6 +42,7 @@ public:
 
 private:
   OnDataChanged _callback;
+  GameMode _mode;
   Shotclock _shotclock;
   TimeScore _timeScore;
   bool _isPaused;

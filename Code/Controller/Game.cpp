@@ -32,7 +32,7 @@ void configureTimer() {
 }
 
 Game::Game(uint16_t gameTimeInSeconds, uint8_t shotclockTimeInSeconds)
-  : _isPaused(true) {
+  : _isPaused(true), _mode(NORMAL) {
   _shotclock.setTimeLeftToShoot(shotclockTimeInSeconds);
   _timeScore.setTimeLeftToPlay(gameTimeInSeconds);
 }
@@ -79,20 +79,40 @@ void Game::setTimeLeftToShoot(uint8_t timeInSeconds) {
 }
 
 void Game::increaseHomeScore() {
-  _timeScore.increaseHomeScore();
+  if (_mode == MANUAL_TIME_SETTING) {
+    _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() + 60);
+  } else {
+    _timeScore.increaseHomeScore();
+  }
   _callback();
 }
 
 void Game::decreaseHomeScore() {
-  _timeScore.decreaseHomeScore();
+  if (_mode == MANUAL_TIME_SETTING) {
+    if (_timeScore.getTimeLeftToPlay() > 60) {
+      _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() - 60);
+    } else {
+      _timeScore.setTimeLeftToPlay(0);
+    }
+  } else {
+    _timeScore.decreaseHomeScore();
+  }
   _callback();
 }
 void Game::increaseAwayScore() {
-  _timeScore.increaseAwayScore();
+  if (_mode == MANUAL_TIME_SETTING) {
+    _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() + 1);
+  } else {
+    _timeScore.increaseAwayScore();
+  }
   _callback();
 }
 void Game::decreaseAwayScore() {
-  _timeScore.decreaseAwayScore();
+  if (_mode == MANUAL_TIME_SETTING) {
+    _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() - 1);
+  } else {
+    _timeScore.decreaseAwayScore();
+  }
   _callback();
 }
 void Game::decreaseHalfTime() {
@@ -105,7 +125,19 @@ void Game::increaseHalfTime() {
 }
 
 void Game::playPause() {
-  _isPaused = !_isPaused;
+  if (_mode == NORMAL) {
+    _isPaused = !_isPaused;
+  }
+}
+
+void Game::toggleMode() {
+  _isPaused = true;
+  if (_mode == NORMAL) {
+    _mode = MANUAL_TIME_SETTING;
+  } else {
+    _mode = NORMAL;
+  }
+  _timeScore.setMode(_mode);
 }
 
 void Game::enableDisableShotclock() {

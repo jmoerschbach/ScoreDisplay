@@ -1,10 +1,12 @@
 #include "TimeScoreLogic.h"
 
 constexpr int TIME_BLINKS = 8;
-constexpr int TIME_BEEPS = 5;
+constexpr int TIME_BEEPS = 1;
+
+constexpr int TIME_MANUAL_BLINKS = 2;
 
 TimeScore::TimeScore()
-  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1), _showTime(true), _timeBlinkCounter(TIME_BLINKS), _beep(false), _beepCounter(TIME_BEEPS) {
+  : _timeLeftToPlay(10 * 60), _homeScore(0), _awayScore(0), _halfTime(1), _showTime(true), _timeBlinkCounter(TIME_BLINKS), _beep(false), _beepCounter(TIME_BEEPS), _manualSettingBlinkCounter(TIME_MANUAL_BLINKS), _mode(NORMAL) {
 }
 
 void TimeScore::on1000msPassed() {
@@ -17,14 +19,17 @@ void TimeScore::on200msPassed() {
   beepIfNeeded();
 }
 void TimeScore::flashIfNeeded() {
-  if (_timeLeftToPlay == 0 && _timeBlinkCounter > 0) {
+  if (_mode == NORMAL && _timeLeftToPlay == 0 && _timeBlinkCounter > 0) {
     _showTime = !_showTime;
     _timeBlinkCounter--;
+  } else if (_mode == MANUAL_TIME_SETTING && _manualSettingBlinkCounter-- == 0) {
+    _showTime = !_showTime;
+    _manualSettingBlinkCounter = TIME_MANUAL_BLINKS;
   }
 }
 
 void TimeScore::beepIfNeeded() {
-  if (_timeLeftToPlay == 0 && _beepCounter > 0) {
+  if (_mode == NORMAL && _timeLeftToPlay == 0 && _beepCounter > 0) {
     _beep = true;
     _beepCounter--;
   } else {
@@ -69,6 +74,13 @@ void TimeScore::decreaseHalfTime() {
 void TimeScore::increaseHalfTime() {
   if (_halfTime < 9) {
     _halfTime++;
+  }
+}
+
+void TimeScore::setMode(GameMode newMode) {
+  _mode = newMode;
+  if (_mode == NORMAL) {
+    _showTime = true;
   }
 }
 
