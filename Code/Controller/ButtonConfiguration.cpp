@@ -34,7 +34,11 @@ GenericButtonConfiguration playPause = GenericButtonConfiguration(
 
 GenericButtonConfiguration shotClock = GenericButtonConfiguration(
   BTN_SHOTCLOCK_RESET_PIN, []() {
-    game.setTimeLeftToShoot(60);
+    if (game.getTimeLeftToPlay() >= 60) {
+      game.setTimeLeftToShoot(60);
+    } else {
+      game.setTimeLeftToShoot(game.getTimeLeftToPlay());
+    }
   },
   []() {}, []() {
     game.enableDisableShotclock();
