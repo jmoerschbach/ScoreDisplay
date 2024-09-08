@@ -116,11 +116,19 @@ void Game::decreaseAwayScore() {
   _callback();
 }
 void Game::decreaseHalfTime() {
-  _timeScore.decreaseHalfTime();
+  if (_mode == MANUAL_TIME_SETTING) {
+    _shotclock.setTimeLeftToShoot(_shotclock.getTimeLeftToShoot() - 1);
+  } else {
+    _timeScore.decreaseHalfTime();
+  }
   _callback();
 }
 void Game::increaseHalfTime() {
-  _timeScore.increaseHalfTime();
+  if (_mode == MANUAL_TIME_SETTING) {
+    _shotclock.setTimeLeftToShoot(_shotclock.getTimeLeftToShoot() + 1);
+  } else {
+    _timeScore.increaseHalfTime();
+  }
   _callback();
 }
 
