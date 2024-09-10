@@ -2,6 +2,8 @@
 #define _SHOTCLOCKLOGIC_h
 #include <stdint.h>
 
+#include "GameMode.h"
+
 class Shotclock {
 public:
   Shotclock::Shotclock();
@@ -12,6 +14,7 @@ public:
   uint8_t getTimeLeftToShoot();
   bool isShotclockShown();
   bool isShotclockBeeping();
+  void Shotclock::setMode(GameMode newMode);
 
 private:
   void flashIfNeeded();
@@ -22,5 +25,7 @@ private:
   uint8_t _shotclockBlinkCounter;
   bool _beepShotclock;
   uint8_t _shotclockBeepCounter;
+  uint8_t _manualSettingBlinkCounter;
+  GameMode _mode;
 };
 #endif

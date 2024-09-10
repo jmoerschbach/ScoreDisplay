@@ -2,8 +2,10 @@
 constexpr int SHOTCLOCK_BLINKS = 6;
 constexpr int SHOTCLOCK_BEEPS = 5;
 
+constexpr int SHOTCLOCK_MANUAL_BLINKS = 2;
+
 Shotclock::Shotclock()
-  : _timeLeftToShoot(60), _isShotclockEnabled(true), _showShotclock(true), _shotclockBlinkCounter(SHOTCLOCK_BLINKS), _shotclockBeepCounter(SHOTCLOCK_BEEPS) {
+  : _timeLeftToShoot(60), _isShotclockEnabled(true), _showShotclock(true), _shotclockBlinkCounter(SHOTCLOCK_BLINKS), _shotclockBeepCounter(SHOTCLOCK_BEEPS), _manualSettingBlinkCounter(SHOTCLOCK_MANUAL_BLINKS), _mode(NORMAL) {
 }
 void Shotclock::enableDisableShotclock() {
   _isShotclockEnabled = !_isShotclockEnabled;
@@ -30,6 +32,9 @@ void Shotclock::flashIfNeeded() {
   if (_isShotclockEnabled && _timeLeftToShoot == 0 && _shotclockBlinkCounter > 0) {
     _showShotclock = !_showShotclock;
     _shotclockBlinkCounter--;
+  } else if (_mode == MANUAL_TIME_SETTING && _manualSettingBlinkCounter-- == 0) {
+    _showShotclock = !_showShotclock;
+    _manualSettingBlinkCounter = SHOTCLOCK_MANUAL_BLINKS;
   }
 }
 
@@ -39,6 +44,13 @@ void Shotclock::beepIfNeeded() {
     _shotclockBeepCounter--;
   } else {
     _beepShotclock = false;
+  }
+}
+
+void Shotclock::setMode(GameMode newMode) {
+  _mode = newMode;
+  if (_mode == NORMAL) {
+    _showShotclock = true;
   }
 }
 

@@ -146,6 +146,7 @@ void Game::toggleMode() {
     _mode = NORMAL;
   }
   _timeScore.setMode(_mode);
+  _shotclock.setMode(_mode);
 }
 
 void Game::enableDisableShotclock() {
