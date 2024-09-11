@@ -42,7 +42,6 @@ void TimeScore::setTimeLeftToPlay(uint16_t timeInSeconds) {
   _timeBlinkCounter = TIME_BLINKS;
   _beepCounter = TIME_BEEPS;
   _beep = false;
-  _showTime = true;
 }
 
 void TimeScore::increaseHomeScore() {
