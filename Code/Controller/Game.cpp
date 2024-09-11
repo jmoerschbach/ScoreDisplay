@@ -68,9 +68,11 @@ void Game::on1000msPassed() {
 }
 
 void Game::setTimeLeftToPlay(uint16_t timeInSeconds) {
-  _timeScore.setTimeLeftToPlay(timeInSeconds);
-  _isPaused = true;
-  _callback();
+  if (_isPaused || _timeScore.getTimeLeftToPlay() == 0) {
+    _timeScore.setTimeLeftToPlay(timeInSeconds);
+    _isPaused = true;
+    _callback();
+  }
 }
 
 void Game::setTimeLeftToShoot(uint8_t timeInSeconds) {
