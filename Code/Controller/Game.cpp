@@ -137,6 +137,9 @@ void Game::toggleMode() {
     _mode = MANUAL_TIME_SETTING;
   } else {
     _mode = NORMAL;
+    if(_timeScore.getTimeLeftToPlay() < 60) {
+      _shotclock.setTimeLeftToShoot(_timeScore.getTimeLeftToPlay());
+    }
   }
   _timeScore.setMode(_mode);
   _shotclock.setMode(_mode);
