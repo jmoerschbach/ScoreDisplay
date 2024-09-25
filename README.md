@@ -1,3 +1,4 @@
+[![Compile Sketches](https://github.com/jmoerschbach/ScoreDisplay/actions/workflows/build.yaml/badge.svg)](https://github.com/jmoerschbach/ScoreDisplay/actions/workflows/build.yaml)
 # Self-built ScoreDisplay
 shows game time, score and halftime
 
