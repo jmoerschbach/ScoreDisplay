@@ -28,4 +28,5 @@ jobs:
           libraries: |
             - name: FastLED
             - name: RF24
+            - name: SmartButton Library
             - source-path: ./Code/common
