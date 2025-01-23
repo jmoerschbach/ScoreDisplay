@@ -1,0 +1,1102 @@
+17.01.25
+Start: Time: 09:33 OCV: 4.2V Load-V: 3.7xxV
+End: Time: 14:06 OCV: 3.463V Load-V: 2.845V
+
+Ready to receive
+
+0: raw: 825, soc: 93, lbo: 0
+
+0: raw: 787, soc: 77, lbo: 0
+
+1: raw: 832, soc: 96, lbo: 0
+
+1: raw: 786, soc: 77, lbo: 0
+
+2: raw: 833, soc: 97, lbo: 0
+
+2: raw: 785, soc: 77, lbo: 0
+
+3: raw: 826, soc: 94, lbo: 0
+
+3: raw: 780, soc: 75, lbo: 0
+
+4: raw: 828, soc: 95, lbo: 0
+
+4: raw: 781, soc: 75, lbo: 0
+
+5: raw: 822, soc: 92, lbo: 0
+
+5: raw: 774, soc: 72, lbo: 0
+
+6: raw: 819, soc: 91, lbo: 0
+
+6: raw: 772, soc: 71, lbo: 0
+
+7: raw: 817, soc: 90, lbo: 0
+
+7: raw: 771, soc: 71, lbo: 0
+
+8: raw: 815, soc: 89, lbo: 0
+
+8: raw: 769, soc: 70, lbo: 0
+
+9: raw: 812, soc: 88, lbo: 0
+
+9: raw: 765, soc: 68, lbo: 0
+
+10: raw: 813, soc: 88, lbo: 0
+
+10: raw: 766, soc: 69, lbo: 0
+
+11: raw: 811, soc: 87, lbo: 0
+
+11: raw: 764, soc: 68, lbo: 0
+
+12: raw: 811, soc: 87, lbo: 0
+
+12: raw: 763, soc: 67, lbo: 0
+
+13: raw: 809, soc: 87, lbo: 0
+
+13: raw: 760, soc: 66, lbo: 0
+
+14: raw: 808, soc: 86, lbo: 0
+
+14: raw: 758, soc: 65, lbo: 0
+
+15: raw: 807, soc: 86, lbo: 0
+
+15: raw: 758, soc: 65, lbo: 0
+
+16: raw: 807, soc: 86, lbo: 0
+
+16: raw: 758, soc: 65, lbo: 0
+
+17: raw: 806, soc: 85, lbo: 0
+
+17: raw: 756, soc: 65, lbo: 0
+
+18: raw: 805, soc: 85, lbo: 0
+
+18: raw: 755, soc: 64, lbo: 0
+
+19: raw: 804, soc: 85, lbo: 0
+
+19: raw: 755, soc: 64, lbo: 0
+
+20: raw: 803, soc: 84, lbo: 0
+
+20: raw: 754, soc: 64, lbo: 0
+
+21: raw: 803, soc: 84, lbo: 0
+
+21: raw: 752, soc: 63, lbo: 0
+
+22: raw: 802, soc: 84, lbo: 0
+
+22: raw: 753, soc: 63, lbo: 0
+
+23: raw: 801, soc: 83, lbo: 0
+
+23: raw: 750, soc: 62, lbo: 0
+
+24: raw: 800, soc: 83, lbo: 0
+
+24: raw: 749, soc: 62, lbo: 0
+
+25: raw: 800, soc: 83, lbo: 0
+
+25: raw: 749, soc: 62, lbo: 0
+
+26: raw: 800, soc: 83, lbo: 0
+
+26: raw: 748, soc: 61, lbo: 0
+
+27: raw: 799, soc: 82, lbo: 0
+
+27: raw: 747, soc: 61, lbo: 0
+
+28: raw: 799, soc: 82, lbo: 0
+
+28: raw: 746, soc: 60, lbo: 0
+
+29: raw: 798, soc: 82, lbo: 0
+
+29: raw: 745, soc: 60, lbo: 0
+
+30: raw: 798, soc: 82, lbo: 0
+
+30: raw: 746, soc: 60, lbo: 0
+
+31: raw: 797, soc: 82, lbo: 0
+
+31: raw: 744, soc: 60, lbo: 0
+
+32: raw: 795, soc: 81, lbo: 0
+
+32: raw: 743, soc: 59, lbo: 0
+
+33: raw: 795, soc: 81, lbo: 0
+
+33: raw: 742, soc: 59, lbo: 0
+
+34: raw: 795, soc: 81, lbo: 0
+
+34: raw: 743, soc: 59, lbo: 0
+
+35: raw: 794, soc: 80, lbo: 0
+
+35: raw: 740, soc: 58, lbo: 0
+
+36: raw: 793, soc: 80, lbo: 0
+
+36: raw: 740, soc: 58, lbo: 0
+
+37: raw: 793, soc: 80, lbo: 0
+
+37: raw: 738, soc: 57, lbo: 0
+
+38: raw: 792, soc: 80, lbo: 0
+
+38: raw: 738, soc: 57, lbo: 0
+
+39: raw: 792, soc: 80, lbo: 0
+
+39: raw: 739, soc: 57, lbo: 0
+
+40: raw: 792, soc: 80, lbo: 0
+
+40: raw: 739, soc: 57, lbo: 0
+
+41: raw: 792, soc: 80, lbo: 0
+
+41: raw: 738, soc: 57, lbo: 0
+
+42: raw: 793, soc: 80, lbo: 0
+
+42: raw: 738, soc: 57, lbo: 0
+
+43: raw: 791, soc: 79, lbo: 0
+
+43: raw: 736, soc: 56, lbo: 0
+
+44: raw: 790, soc: 79, lbo: 0
+
+44: raw: 736, soc: 56, lbo: 0
+
+45: raw: 789, soc: 78, lbo: 0
+
+45: raw: 734, soc: 55, lbo: 0
+
+46: raw: 791, soc: 79, lbo: 0
+
+46: raw: 735, soc: 56, lbo: 0
+
+47: raw: 791, soc: 79, lbo: 0
+
+47: raw: 734, soc: 55, lbo: 0
+
+48: raw: 790, soc: 79, lbo: 0
+
+48: raw: 734, soc: 55, lbo: 0
+
+49: raw: 789, soc: 78, lbo: 0
+
+49: raw: 733, soc: 55, lbo: 0
+
+50: raw: 788, soc: 78, lbo: 0
+
+50: raw: 732, soc: 55, lbo: 0
+
+51: raw: 788, soc: 78, lbo: 0
+
+51: raw: 732, soc: 55, lbo: 0
+
+52: raw: 787, soc: 77, lbo: 0
+
+52: raw: 731, soc: 54, lbo: 0
+
+53: raw: 788, soc: 78, lbo: 0
+
+53: raw: 731, soc: 54, lbo: 0
+
+54: raw: 788, soc: 78, lbo: 0
+
+54: raw: 731, soc: 54, lbo: 0
+
+55: raw: 787, soc: 77, lbo: 0
+
+55: raw: 730, soc: 54, lbo: 0
+
+56: raw: 787, soc: 77, lbo: 0
+
+56: raw: 729, soc: 53, lbo: 0
+
+57: raw: 787, soc: 77, lbo: 0
+
+57: raw: 729, soc: 53, lbo: 0
+
+58: raw: 785, soc: 77, lbo: 0
+
+58: raw: 729, soc: 53, lbo: 0
+
+59: raw: 784, soc: 76, lbo: 0
+
+59: raw: 730, soc: 54, lbo: 0
+
+60: raw: 783, soc: 76, lbo: 0
+
+60: raw: 725, soc: 52, lbo: 0
+
+61: raw: 783, soc: 76, lbo: 0
+
+61: raw: 728, soc: 53, lbo: 0
+
+62: raw: 784, soc: 76, lbo: 0
+
+62: raw: 725, soc: 52, lbo: 0
+
+63: raw: 782, soc: 75, lbo: 0
+
+63: raw: 723, soc: 51, lbo: 0
+
+64: raw: 780, soc: 75, lbo: 0
+
+64: raw: 722, soc: 50, lbo: 0
+
+65: raw: 779, soc: 74, lbo: 0
+
+65: raw: 720, soc: 50, lbo: 0
+
+66: raw: 779, soc: 74, lbo: 0
+
+66: raw: 720, soc: 50, lbo: 0
+
+67: raw: 778, soc: 74, lbo: 0
+
+67: raw: 722, soc: 50, lbo: 0
+
+68: raw: 777, soc: 73, lbo: 0
+
+68: raw: 718, soc: 49, lbo: 0
+
+69: raw: 777, soc: 73, lbo: 0
+
+69: raw: 723, soc: 51, lbo: 0
+
+70: raw: 777, soc: 73, lbo: 0
+
+70: raw: 717, soc: 48, lbo: 0
+
+71: raw: 776, soc: 73, lbo: 0
+
+71: raw: 718, soc: 49, lbo: 0
+
+72: raw: 775, soc: 72, lbo: 0
+
+72: raw: 714, soc: 47, lbo: 0
+
+73: raw: 775, soc: 72, lbo: 0
+
+73: raw: 714, soc: 47, lbo: 0
+
+74: raw: 775, soc: 72, lbo: 0
+
+74: raw: 717, soc: 48, lbo: 0
+
+75: raw: 775, soc: 72, lbo: 0
+
+75: raw: 714, soc: 47, lbo: 0
+
+76: raw: 774, soc: 72, lbo: 0
+
+76: raw: 718, soc: 49, lbo: 0
+
+77: raw: 774, soc: 72, lbo: 0
+
+77: raw: 716, soc: 48, lbo: 0
+
+78: raw: 774, soc: 72, lbo: 0
+
+78: raw: 712, soc: 46, lbo: 0
+
+79: raw: 773, soc: 72, lbo: 0
+
+79: raw: 724, soc: 51, lbo: 0
+
+80: raw: 772, soc: 71, lbo: 0
+
+80: raw: 713, soc: 47, lbo: 0
+
+81: raw: 771, soc: 71, lbo: 0
+
+81: raw: 715, soc: 47, lbo: 0
+
+82: raw: 770, soc: 70, lbo: 0
+
+82: raw: 711, soc: 46, lbo: 0
+
+83: raw: 769, soc: 70, lbo: 0
+
+83: raw: 717, soc: 48, lbo: 0
+
+84: raw: 768, soc: 70, lbo: 0
+
+84: raw: 716, soc: 48, lbo: 0
+
+85: raw: 768, soc: 70, lbo: 0
+
+85: raw: 718, soc: 49, lbo: 0
+
+86: raw: 767, soc: 69, lbo: 0
+
+86: raw: 711, soc: 46, lbo: 0
+
+87: raw: 767, soc: 69, lbo: 0
+
+87: raw: 714, soc: 47, lbo: 0
+
+88: raw: 767, soc: 69, lbo: 0
+
+88: raw: 707, soc: 44, lbo: 0
+
+89: raw: 766, soc: 69, lbo: 0
+
+89: raw: 707, soc: 44, lbo: 0
+
+90: raw: 765, soc: 68, lbo: 0
+
+90: raw: 712, soc: 46, lbo: 0
+
+91: raw: 763, soc: 67, lbo: 0
+
+91: raw: 710, soc: 45, lbo: 0
+
+92: raw: 762, soc: 67, lbo: 0
+
+92: raw: 713, soc: 47, lbo: 0
+
+93: raw: 762, soc: 67, lbo: 0
+
+93: raw: 708, soc: 45, lbo: 0
+
+94: raw: 761, soc: 67, lbo: 0
+
+94: raw: 705, soc: 43, lbo: 0
+
+95: raw: 761, soc: 67, lbo: 0
+
+95: raw: 707, soc: 44, lbo: 0
+
+96: raw: 760, soc: 66, lbo: 0
+
+96: raw: 703, soc: 42, lbo: 0
+
+97: raw: 759, soc: 66, lbo: 0
+
+97: raw: 704, soc: 43, lbo: 0
+
+98: raw: 758, soc: 65, lbo: 0
+
+98: raw: 705, soc: 43, lbo: 0
+
+99: raw: 757, soc: 65, lbo: 0
+
+99: raw: 706, soc: 44, lbo: 0
+
+100: raw: 757, soc: 65, lbo: 0
+
+100: raw: 701, soc: 42, lbo: 0
+
+101: raw: 756, soc: 65, lbo: 0
+
+101: raw: 697, soc: 40, lbo: 0
+
+102: raw: 756, soc: 65, lbo: 0
+
+102: raw: 704, soc: 43, lbo: 0
+
+103: raw: 755, soc: 64, lbo: 0
+
+103: raw: 706, soc: 44, lbo: 0
+
+104: raw: 755, soc: 64, lbo: 0
+
+104: raw: 705, soc: 43, lbo: 0
+
+105: raw: 755, soc: 64, lbo: 0
+
+105: raw: 703, soc: 42, lbo: 0
+
+106: raw: 754, soc: 64, lbo: 0
+
+106: raw: 698, soc: 40, lbo: 0
+
+107: raw: 753, soc: 63, lbo: 0
+
+107: raw: 702, soc: 42, lbo: 0
+
+108: raw: 752, soc: 63, lbo: 0
+
+108: raw: 695, soc: 39, lbo: 0
+
+109: raw: 751, soc: 62, lbo: 0
+
+109: raw: 693, soc: 38, lbo: 0
+
+110: raw: 750, soc: 62, lbo: 0
+
+110: raw: 701, soc: 42, lbo: 0
+
+111: raw: 749, soc: 62, lbo: 0
+
+111: raw: 701, soc: 42, lbo: 0
+
+112: raw: 749, soc: 62, lbo: 0
+
+112: raw: 695, soc: 39, lbo: 0
+
+113: raw: 748, soc: 61, lbo: 0
+
+113: raw: 703, soc: 42, lbo: 0
+
+114: raw: 748, soc: 61, lbo: 0
+
+114: raw: 693, soc: 38, lbo: 0
+
+115: raw: 748, soc: 61, lbo: 0
+
+115: raw: 691, soc: 37, lbo: 0
+
+116: raw: 748, soc: 61, lbo: 0
+
+116: raw: 694, soc: 39, lbo: 0
+
+117: raw: 747, soc: 61, lbo: 0
+
+117: raw: 693, soc: 38, lbo: 0
+
+118: raw: 746, soc: 60, lbo: 0
+
+118: raw: 697, soc: 40, lbo: 0
+
+119: raw: 745, soc: 60, lbo: 0
+
+119: raw: 697, soc: 40, lbo: 0
+
+120: raw: 745, soc: 60, lbo: 0
+
+120: raw: 690, soc: 37, lbo: 0
+
+121: raw: 744, soc: 60, lbo: 0
+
+121: raw: 688, soc: 36, lbo: 0
+
+122: raw: 743, soc: 59, lbo: 0
+
+122: raw: 690, soc: 37, lbo: 0
+
+123: raw: 742, soc: 59, lbo: 0
+
+123: raw: 692, soc: 38, lbo: 0
+
+124: raw: 742, soc: 59, lbo: 0
+
+124: raw: 692, soc: 38, lbo: 0
+
+125: raw: 741, soc: 58, lbo: 0
+
+125: raw: 691, soc: 37, lbo: 0
+
+126: raw: 740, soc: 58, lbo: 0
+
+126: raw: 689, soc: 37, lbo: 0
+
+127: raw: 739, soc: 57, lbo: 0
+
+127: raw: 686, soc: 35, lbo: 0
+
+128: raw: 738, soc: 57, lbo: 0
+
+128: raw: 682, soc: 34, lbo: 0
+
+129: raw: 737, soc: 57, lbo: 0
+
+129: raw: 689, soc: 37, lbo: 0
+
+130: raw: 737, soc: 57, lbo: 0
+
+130: raw: 686, soc: 35, lbo: 0
+
+131: raw: 736, soc: 56, lbo: 0
+
+131: raw: 681, soc: 33, lbo: 0
+
+132: raw: 736, soc: 56, lbo: 0
+
+132: raw: 678, soc: 32, lbo: 0
+
+133: raw: 735, soc: 56, lbo: 0
+
+133: raw: 680, soc: 33, lbo: 0
+
+134: raw: 734, soc: 55, lbo: 0
+
+134: raw: 680, soc: 33, lbo: 0
+
+135: raw: 734, soc: 55, lbo: 0
+
+135: raw: 686, soc: 35, lbo: 0
+
+136: raw: 733, soc: 55, lbo: 0
+
+136: raw: 681, soc: 33, lbo: 0
+
+137: raw: 732, soc: 55, lbo: 0
+
+137: raw: 685, soc: 35, lbo: 0
+
+138: raw: 732, soc: 55, lbo: 0
+
+138: raw: 682, soc: 34, lbo: 0
+
+139: raw: 731, soc: 54, lbo: 0
+
+139: raw: 684, soc: 35, lbo: 0
+
+140: raw: 730, soc: 54, lbo: 0
+
+140: raw: 682, soc: 34, lbo: 0
+
+141: raw: 730, soc: 54, lbo: 0
+
+141: raw: 678, soc: 32, lbo: 0
+
+142: raw: 729, soc: 53, lbo: 0
+
+142: raw: 679, soc: 32, lbo: 0
+
+143: raw: 728, soc: 53, lbo: 0
+
+143: raw: 679, soc: 32, lbo: 0
+
+144: raw: 728, soc: 53, lbo: 0
+
+144: raw: 678, soc: 32, lbo: 0
+
+145: raw: 727, soc: 52, lbo: 0
+
+145: raw: 678, soc: 32, lbo: 0
+
+146: raw: 726, soc: 52, lbo: 0
+
+146: raw: 683, soc: 34, lbo: 0
+
+147: raw: 726, soc: 52, lbo: 0
+
+147: raw: 677, soc: 32, lbo: 0
+
+148: raw: 725, soc: 52, lbo: 0
+
+148: raw: 679, soc: 32, lbo: 0
+
+149: raw: 725, soc: 52, lbo: 0
+
+149: raw: 679, soc: 32, lbo: 0
+
+150: raw: 724, soc: 51, lbo: 0
+
+150: raw: 676, soc: 31, lbo: 0
+
+151: raw: 723, soc: 51, lbo: 0
+
+151: raw: 674, soc: 30, lbo: 0
+
+152: raw: 723, soc: 51, lbo: 0
+
+152: raw: 678, soc: 32, lbo: 0
+
+153: raw: 722, soc: 50, lbo: 0
+
+153: raw: 676, soc: 31, lbo: 0
+
+154: raw: 722, soc: 50, lbo: 0
+
+154: raw: 675, soc: 31, lbo: 0
+
+155: raw: 722, soc: 50, lbo: 0
+
+155: raw: 679, soc: 32, lbo: 0
+
+156: raw: 721, soc: 50, lbo: 0
+
+156: raw: 672, soc: 30, lbo: 0
+
+157: raw: 721, soc: 50, lbo: 0
+
+157: raw: 677, soc: 32, lbo: 0
+
+158: raw: 720, soc: 50, lbo: 0
+
+158: raw: 675, soc: 31, lbo: 0
+
+159: raw: 720, soc: 50, lbo: 0
+
+159: raw: 676, soc: 31, lbo: 0
+
+160: raw: 720, soc: 50, lbo: 0
+
+160: raw: 681, soc: 33, lbo: 0
+
+161: raw: 719, soc: 49, lbo: 0
+
+161: raw: 674, soc: 30, lbo: 0
+
+162: raw: 719, soc: 49, lbo: 0
+
+162: raw: 675, soc: 31, lbo: 0
+
+163: raw: 718, soc: 49, lbo: 0
+
+163: raw: 677, soc: 32, lbo: 0
+
+164: raw: 718, soc: 49, lbo: 0
+
+164: raw: 677, soc: 32, lbo: 0
+
+165: raw: 718, soc: 49, lbo: 0
+
+165: raw: 676, soc: 31, lbo: 0
+
+166: raw: 717, soc: 48, lbo: 0
+
+166: raw: 672, soc: 30, lbo: 0
+
+167: raw: 717, soc: 48, lbo: 0
+
+167: raw: 672, soc: 30, lbo: 0
+
+168: raw: 716, soc: 48, lbo: 0
+
+168: raw: 676, soc: 31, lbo: 0
+
+169: raw: 716, soc: 48, lbo: 0
+
+169: raw: 672, soc: 30, lbo: 0
+
+170: raw: 715, soc: 47, lbo: 0
+
+170: raw: 673, soc: 30, lbo: 0
+
+171: raw: 715, soc: 47, lbo: 0
+
+171: raw: 669, soc: 28, lbo: 0
+
+172: raw: 715, soc: 47, lbo: 0
+
+172: raw: 676, soc: 31, lbo: 0
+
+173: raw: 714, soc: 47, lbo: 0
+
+173: raw: 671, soc: 29, lbo: 0
+
+174: raw: 714, soc: 47, lbo: 0
+
+174: raw: 670, soc: 29, lbo: 0
+
+175: raw: 714, soc: 47, lbo: 0
+
+175: raw: 667, soc: 27, lbo: 0
+
+176: raw: 713, soc: 47, lbo: 0
+
+176: raw: 674, soc: 30, lbo: 0
+
+177: raw: 713, soc: 47, lbo: 0
+
+177: raw: 674, soc: 30, lbo: 0
+
+178: raw: 713, soc: 47, lbo: 0
+
+178: raw: 671, soc: 29, lbo: 0
+
+179: raw: 712, soc: 46, lbo: 0
+
+179: raw: 668, soc: 28, lbo: 0
+
+180: raw: 712, soc: 46, lbo: 0
+
+180: raw: 669, soc: 28, lbo: 0
+
+181: raw: 712, soc: 46, lbo: 0
+
+181: raw: 669, soc: 28, lbo: 0
+
+182: raw: 711, soc: 46, lbo: 0
+
+182: raw: 667, soc: 27, lbo: 0
+
+183: raw: 711, soc: 46, lbo: 0
+
+183: raw: 667, soc: 27, lbo: 0
+
+184: raw: 711, soc: 46, lbo: 0
+
+184: raw: 670, soc: 29, lbo: 0
+
+185: raw: 710, soc: 45, lbo: 0
+
+185: raw: 670, soc: 29, lbo: 0
+
+186: raw: 710, soc: 45, lbo: 0
+
+186: raw: 667, soc: 27, lbo: 0
+
+187: raw: 710, soc: 45, lbo: 0
+
+187: raw: 671, soc: 29, lbo: 0
+
+188: raw: 710, soc: 45, lbo: 0
+
+188: raw: 671, soc: 29, lbo: 0
+
+189: raw: 710, soc: 45, lbo: 0
+
+189: raw: 668, soc: 28, lbo: 0
+
+190: raw: 710, soc: 45, lbo: 0
+
+190: raw: 671, soc: 29, lbo: 0
+
+191: raw: 710, soc: 45, lbo: 0
+
+191: raw: 667, soc: 27, lbo: 0
+
+192: raw: 709, soc: 45, lbo: 0
+
+192: raw: 668, soc: 28, lbo: 0
+
+193: raw: 709, soc: 45, lbo: 0
+
+193: raw: 669, soc: 28, lbo: 0
+
+194: raw: 709, soc: 45, lbo: 0
+
+194: raw: 671, soc: 29, lbo: 0
+
+195: raw: 709, soc: 45, lbo: 0
+
+195: raw: 668, soc: 28, lbo: 0
+
+196: raw: 709, soc: 45, lbo: 0
+
+196: raw: 669, soc: 28, lbo: 0
+
+197: raw: 708, soc: 45, lbo: 0
+
+197: raw: 666, soc: 27, lbo: 0
+
+198: raw: 708, soc: 45, lbo: 0
+
+198: raw: 666, soc: 27, lbo: 0
+
+199: raw: 708, soc: 45, lbo: 0
+
+199: raw: 668, soc: 28, lbo: 0
+
+200: raw: 708, soc: 45, lbo: 0
+
+200: raw: 670, soc: 29, lbo: 0
+
+201: raw: 707, soc: 44, lbo: 0
+
+201: raw: 669, soc: 28, lbo: 0
+
+202: raw: 707, soc: 44, lbo: 0
+
+202: raw: 670, soc: 29, lbo: 0
+
+203: raw: 707, soc: 44, lbo: 0
+
+203: raw: 666, soc: 27, lbo: 0
+
+204: raw: 706, soc: 44, lbo: 0
+
+204: raw: 668, soc: 28, lbo: 0
+
+205: raw: 706, soc: 44, lbo: 0
+
+205: raw: 668, soc: 28, lbo: 0
+
+206: raw: 706, soc: 44, lbo: 0
+
+206: raw: 666, soc: 27, lbo: 0
+
+207: raw: 706, soc: 44, lbo: 0
+
+207: raw: 667, soc: 27, lbo: 0
+
+208: raw: 706, soc: 44, lbo: 0
+
+208: raw: 669, soc: 28, lbo: 0
+
+209: raw: 705, soc: 43, lbo: 0
+
+209: raw: 664, soc: 26, lbo: 0
+
+210: raw: 705, soc: 43, lbo: 0
+
+210: raw: 666, soc: 27, lbo: 0
+
+211: raw: 705, soc: 43, lbo: 0
+
+211: raw: 666, soc: 27, lbo: 0
+
+212: raw: 704, soc: 43, lbo: 0
+
+212: raw: 669, soc: 28, lbo: 0
+
+213: raw: 704, soc: 43, lbo: 0
+
+213: raw: 665, soc: 27, lbo: 0
+
+214: raw: 703, soc: 42, lbo: 0
+
+214: raw: 664, soc: 26, lbo: 0
+
+215: raw: 703, soc: 42, lbo: 0
+
+215: raw: 667, soc: 27, lbo: 0
+
+216: raw: 703, soc: 42, lbo: 0
+
+216: raw: 667, soc: 27, lbo: 0
+
+217: raw: 703, soc: 42, lbo: 0
+
+217: raw: 668, soc: 28, lbo: 0
+
+218: raw: 702, soc: 42, lbo: 0
+
+218: raw: 662, soc: 25, lbo: 0
+
+219: raw: 702, soc: 42, lbo: 0
+
+219: raw: 664, soc: 26, lbo: 0
+
+220: raw: 701, soc: 42, lbo: 0
+
+220: raw: 669, soc: 28, lbo: 0
+
+221: raw: 701, soc: 42, lbo: 0
+
+221: raw: 664, soc: 26, lbo: 0
+
+222: raw: 700, soc: 41, lbo: 0
+
+222: raw: 664, soc: 26, lbo: 0
+
+223: raw: 700, soc: 41, lbo: 0
+
+223: raw: 663, soc: 26, lbo: 0
+
+224: raw: 699, soc: 41, lbo: 0
+
+224: raw: 662, soc: 25, lbo: 0
+
+225: raw: 699, soc: 41, lbo: 0
+
+225: raw: 663, soc: 26, lbo: 0
+
+226: raw: 698, soc: 40, lbo: 0
+
+226: raw: 662, soc: 25, lbo: 0
+
+227: raw: 698, soc: 40, lbo: 0
+
+227: raw: 662, soc: 25, lbo: 0
+
+228: raw: 698, soc: 40, lbo: 0
+
+228: raw: 664, soc: 26, lbo: 0
+
+229: raw: 697, soc: 40, lbo: 0
+
+229: raw: 662, soc: 25, lbo: 0
+
+230: raw: 697, soc: 40, lbo: 0
+
+230: raw: 661, soc: 25, lbo: 0
+
+231: raw: 696, soc: 40, lbo: 0
+
+231: raw: 660, soc: 25, lbo: 0
+
+232: raw: 696, soc: 40, lbo: 0
+
+232: raw: 666, soc: 27, lbo: 0
+
+233: raw: 695, soc: 39, lbo: 0
+
+233: raw: 659, soc: 24, lbo: 0
+
+234: raw: 695, soc: 39, lbo: 0
+
+234: raw: 661, soc: 25, lbo: 0
+
+235: raw: 695, soc: 39, lbo: 0
+
+235: raw: 661, soc: 25, lbo: 0
+
+236: raw: 694, soc: 39, lbo: 0
+
+236: raw: 661, soc: 25, lbo: 0
+
+237: raw: 694, soc: 39, lbo: 0
+
+237: raw: 658, soc: 24, lbo: 0
+
+238: raw: 694, soc: 39, lbo: 0
+
+238: raw: 660, soc: 25, lbo: 0
+
+239: raw: 693, soc: 38, lbo: 0
+
+239: raw: 661, soc: 25, lbo: 0
+
+240: raw: 693, soc: 38, lbo: 0
+
+240: raw: 661, soc: 25, lbo: 0
+
+241: raw: 692, soc: 38, lbo: 0
+
+241: raw: 660, soc: 25, lbo: 0
+
+242: raw: 691, soc: 37, lbo: 0
+
+242: raw: 662, soc: 25, lbo: 0
+
+243: raw: 691, soc: 37, lbo: 0
+
+243: raw: 657, soc: 23, lbo: 0
+
+244: raw: 690, soc: 37, lbo: 0
+
+244: raw: 659, soc: 24, lbo: 0
+
+245: raw: 690, soc: 37, lbo: 0
+
+245: raw: 657, soc: 23, lbo: 0
+
+246: raw: 689, soc: 37, lbo: 0
+
+246: raw: 656, soc: 23, lbo: 0
+
+247: raw: 689, soc: 37, lbo: 0
+
+247: raw: 660, soc: 25, lbo: 0
+
+248: raw: 688, soc: 36, lbo: 0
+
+248: raw: 657, soc: 23, lbo: 0
+
+249: raw: 688, soc: 36, lbo: 0
+
+249: raw: 659, soc: 24, lbo: 0
+
+250: raw: 687, soc: 36, lbo: 0
+
+250: raw: 657, soc: 23, lbo: 0
+
+251: raw: 687, soc: 36, lbo: 0
+
+251: raw: 655, soc: 22, lbo: 0
+
+252: raw: 686, soc: 35, lbo: 0
+
+252: raw: 655, soc: 22, lbo: 0
+
+253: raw: 686, soc: 35, lbo: 0
+
+253: raw: 657, soc: 23, lbo: 0
+
+254: raw: 686, soc: 35, lbo: 0
+
+254: raw: 654, soc: 22, lbo: 0
+
+255: raw: 685, soc: 35, lbo: 0
+
+255: raw: 655, soc: 22, lbo: 0
+
+256: raw: 685, soc: 35, lbo: 0
+
+256: raw: 656, soc: 23, lbo: 0
+
+257: raw: 684, soc: 35, lbo: 0
+
+257: raw: 655, soc: 22, lbo: 0
+
+258: raw: 683, soc: 34, lbo: 0
+
+258: raw: 656, soc: 23, lbo: 0
+
+259: raw: 683, soc: 34, lbo: 0
+
+259: raw: 655, soc: 22, lbo: 0
+
+260: raw: 683, soc: 34, lbo: 0
+
+260: raw: 655, soc: 22, lbo: 0
+
+261: raw: 682, soc: 34, lbo: 0
+
+261: raw: 656, soc: 23, lbo: 0
+
+262: raw: 682, soc: 34, lbo: 0
+
+262: raw: 653, soc: 22, lbo: 0
+
+263: raw: 681, soc: 33, lbo: 0
+
+263: raw: 658, soc: 24, lbo: 0
+
+264: raw: 681, soc: 33, lbo: 0
+
+264: raw: 656, soc: 23, lbo: 0
+
+265: raw: 680, soc: 33, lbo: 0
+
+265: raw: 657, soc: 23, lbo: 0
+
+266: raw: 679, soc: 32, lbo: 0
+
+266: raw: 651, soc: 21, lbo: 0
+
+267: raw: 679, soc: 32, lbo: 0
+
+267: raw: 652, soc: 21, lbo: 0
+
+268: raw: 678, soc: 32, lbo: 0
+
+268: raw: 653, soc: 22, lbo: 0
+
+269: raw: 678, soc: 32, lbo: 0
+
+269: raw: 651, soc: 21, lbo: 0
+
+270: raw: 676, soc: 31, lbo: 0
+
+270: raw: 651, soc: 21, lbo: 0
+
+271: raw: 676, soc: 31, lbo: 0
+
+271: raw: 651, soc: 21, lbo: 0
+
+272: raw: 675, soc: 31, lbo: 0
+
+272: raw: 652, soc: 21, lbo: 0
+
+273: raw: 674, soc: 30, lbo: 0
+
+273: raw: 653, soc: 22, lbo: 0
+

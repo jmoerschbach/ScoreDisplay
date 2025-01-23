@@ -1,0 +1,2876 @@
+20.01.25
+Start: Time: 08:07 OCV: 4.201V Load-V: 3.832V
+End: Time: 20:05 OCV: 3.598V Load-V: 3.190V
+
+0: raw: 829, voltage: 3.965, soc: 95, lbo: 1
+
+0: raw: 817, voltage: 3.908, soc: 90, lbo: 1
+
+1: raw: 852, voltage: 4.075, soc: 105, lbo: 0
+
+1: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+2: raw: 843, voltage: 4.032, soc: 101, lbo: 0
+
+2: raw: 820, voltage: 3.922, soc: 91, lbo: 0
+
+3: raw: 842, voltage: 4.028, soc: 100, lbo: 0
+
+3: raw: 819, voltage: 3.918, soc: 91, lbo: 0
+
+4: raw: 840, voltage: 4.018, soc: 100, lbo: 0
+
+4: raw: 819, voltage: 3.918, soc: 91, lbo: 0
+
+5: raw: 840, voltage: 4.018, soc: 100, lbo: 0
+
+5: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+6: raw: 838, voltage: 4.008, soc: 99, lbo: 0
+
+6: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+7: raw: 838, voltage: 4.008, soc: 99, lbo: 0
+
+7: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+8: raw: 842, voltage: 4.028, soc: 100, lbo: 0
+
+8: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+9: raw: 840, voltage: 4.018, soc: 100, lbo: 0
+
+9: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+10: raw: 838, voltage: 4.008, soc: 99, lbo: 0
+
+10: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+11: raw: 843, voltage: 4.032, soc: 101, lbo: 0
+
+11: raw: 819, voltage: 3.918, soc: 91, lbo: 0
+
+12: raw: 843, voltage: 4.032, soc: 101, lbo: 0
+
+12: raw: 819, voltage: 3.918, soc: 91, lbo: 0
+
+13: raw: 841, voltage: 4.023, soc: 100, lbo: 0
+
+13: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+14: raw: 845, voltage: 4.042, soc: 102, lbo: 0
+
+14: raw: 830, voltage: 3.970, soc: 95, lbo: 0
+
+15: raw: 829, voltage: 3.965, soc: 95, lbo: 0
+
+15: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+16: raw: 830, voltage: 3.970, soc: 95, lbo: 0
+
+16: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+17: raw: 831, voltage: 3.975, soc: 96, lbo: 0
+
+17: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+18: raw: 832, voltage: 3.980, soc: 96, lbo: 0
+
+18: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+19: raw: 834, voltage: 3.989, soc: 97, lbo: 0
+
+19: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+20: raw: 831, voltage: 3.975, soc: 96, lbo: 0
+
+20: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+21: raw: 835, voltage: 3.994, soc: 97, lbo: 0
+
+21: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+22: raw: 832, voltage: 3.980, soc: 96, lbo: 0
+
+22: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+23: raw: 833, voltage: 3.985, soc: 97, lbo: 0
+
+23: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+24: raw: 835, voltage: 3.994, soc: 97, lbo: 0
+
+24: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+25: raw: 849, voltage: 4.061, soc: 103, lbo: 0
+
+25: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+26: raw: 824, voltage: 3.941, soc: 93, lbo: 0
+
+26: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+27: raw: 823, voltage: 3.937, soc: 92, lbo: 0
+
+27: raw: 804, voltage: 3.846, soc: 85, lbo: 0
+
+28: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+28: raw: 803, voltage: 3.841, soc: 84, lbo: 0
+
+29: raw: 822, voltage: 3.932, soc: 92, lbo: 0
+
+29: raw: 803, voltage: 3.841, soc: 84, lbo: 0
+
+30: raw: 828, voltage: 3.961, soc: 95, lbo: 0
+
+30: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+31: raw: 827, voltage: 3.956, soc: 94, lbo: 0
+
+31: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+32: raw: 826, voltage: 3.951, soc: 94, lbo: 0
+
+32: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+33: raw: 828, voltage: 3.961, soc: 95, lbo: 0
+
+33: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+34: raw: 833, voltage: 3.985, soc: 97, lbo: 0
+
+34: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+35: raw: 829, voltage: 3.965, soc: 95, lbo: 0
+
+35: raw: 808, voltage: 3.865, soc: 86, lbo: 0
+
+36: raw: 833, voltage: 3.985, soc: 97, lbo: 0
+
+36: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+37: raw: 827, voltage: 3.956, soc: 94, lbo: 0
+
+37: raw: 804, voltage: 3.846, soc: 85, lbo: 0
+
+38: raw: 825, voltage: 3.946, soc: 93, lbo: 0
+
+38: raw: 802, voltage: 3.836, soc: 84, lbo: 0
+
+39: raw: 823, voltage: 3.937, soc: 92, lbo: 0
+
+39: raw: 802, voltage: 3.836, soc: 84, lbo: 0
+
+40: raw: 822, voltage: 3.932, soc: 92, lbo: 0
+
+40: raw: 803, voltage: 3.841, soc: 84, lbo: 0
+
+41: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+41: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+42: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+42: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+43: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+43: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+44: raw: 823, voltage: 3.937, soc: 92, lbo: 0
+
+44: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+45: raw: 825, voltage: 3.946, soc: 93, lbo: 0
+
+45: raw: 802, voltage: 3.836, soc: 84, lbo: 0
+
+46: raw: 827, voltage: 3.956, soc: 94, lbo: 0
+
+46: raw: 802, voltage: 3.836, soc: 84, lbo: 0
+
+47: raw: 827, voltage: 3.956, soc: 94, lbo: 0
+
+47: raw: 803, voltage: 3.841, soc: 84, lbo: 0
+
+48: raw: 826, voltage: 3.951, soc: 94, lbo: 0
+
+48: raw: 803, voltage: 3.841, soc: 84, lbo: 0
+
+49: raw: 823, voltage: 3.937, soc: 92, lbo: 0
+
+49: raw: 802, voltage: 3.836, soc: 84, lbo: 0
+
+50: raw: 822, voltage: 3.932, soc: 92, lbo: 0
+
+50: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+51: raw: 822, voltage: 3.932, soc: 92, lbo: 0
+
+51: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+52: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+52: raw: 801, voltage: 3.831, soc: 83, lbo: 0
+
+53: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+53: raw: 800, voltage: 3.827, soc: 83, lbo: 0
+
+54: raw: 821, voltage: 3.927, soc: 92, lbo: 0
+
+54: raw: 799, voltage: 3.822, soc: 82, lbo: 0
+
+55: raw: 820, voltage: 3.922, soc: 91, lbo: 0
+
+55: raw: 799, voltage: 3.822, soc: 82, lbo: 0
+
+56: raw: 820, voltage: 3.922, soc: 91, lbo: 0
+
+56: raw: 799, voltage: 3.822, soc: 82, lbo: 0
+
+57: raw: 818, voltage: 3.913, soc: 90, lbo: 0
+
+57: raw: 798, voltage: 3.817, soc: 82, lbo: 0
+
+58: raw: 817, voltage: 3.908, soc: 90, lbo: 0
+
+58: raw: 798, voltage: 3.817, soc: 82, lbo: 0
+
+59: raw: 817, voltage: 3.908, soc: 90, lbo: 0
+
+59: raw: 796, voltage: 3.808, soc: 81, lbo: 0
+
+60: raw: 816, voltage: 3.903, soc: 90, lbo: 0
+
+60: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+61: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+61: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+62: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+62: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+63: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+63: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+64: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+64: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+65: raw: 813, voltage: 3.889, soc: 88, lbo: 0
+
+65: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+66: raw: 813, voltage: 3.889, soc: 88, lbo: 0
+
+66: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+67: raw: 813, voltage: 3.889, soc: 88, lbo: 0
+
+67: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+68: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+68: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+69: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+69: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+70: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+70: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+71: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+71: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+72: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+72: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+73: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+73: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+74: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+74: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+75: raw: 816, voltage: 3.903, soc: 90, lbo: 0
+
+75: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+76: raw: 816, voltage: 3.903, soc: 90, lbo: 0
+
+76: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+77: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+77: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+78: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+78: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+79: raw: 816, voltage: 3.903, soc: 90, lbo: 0
+
+79: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+80: raw: 816, voltage: 3.903, soc: 90, lbo: 0
+
+80: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+81: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+81: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+82: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+82: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+83: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+83: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+84: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+84: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+85: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+85: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+86: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+86: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+87: raw: 815, voltage: 3.898, soc: 89, lbo: 0
+
+87: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+88: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+88: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+89: raw: 814, voltage: 3.894, soc: 89, lbo: 0
+
+89: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+90: raw: 813, voltage: 3.889, soc: 88, lbo: 0
+
+90: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+91: raw: 813, voltage: 3.889, soc: 88, lbo: 0
+
+91: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+92: raw: 812, voltage: 3.884, soc: 88, lbo: 0
+
+92: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+93: raw: 812, voltage: 3.884, soc: 88, lbo: 0
+
+93: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+94: raw: 812, voltage: 3.884, soc: 88, lbo: 0
+
+94: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+95: raw: 812, voltage: 3.884, soc: 88, lbo: 0
+
+95: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+96: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+96: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+97: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+97: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+98: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+98: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+99: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+99: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+100: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+100: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+101: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+101: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+102: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+102: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+103: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+103: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+104: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+104: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+105: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+105: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+106: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+106: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+107: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+107: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+108: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+108: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+109: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+109: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+110: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+110: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+111: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+111: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+112: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+112: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+113: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+113: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+114: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+114: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+115: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+115: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+116: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+116: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+117: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+117: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+118: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+118: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+119: raw: 808, voltage: 3.865, soc: 86, lbo: 0
+
+119: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+120: raw: 808, voltage: 3.865, soc: 86, lbo: 0
+
+120: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+121: raw: 808, voltage: 3.865, soc: 86, lbo: 0
+
+121: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+122: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+122: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+123: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+123: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+124: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+124: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+125: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+125: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+126: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+126: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+127: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+127: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+128: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+128: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+129: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+129: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+130: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+130: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+131: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+131: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+132: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+132: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+133: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+133: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+134: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+134: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+135: raw: 811, voltage: 3.879, soc: 87, lbo: 0
+
+135: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+136: raw: 809, voltage: 3.870, soc: 87, lbo: 0
+
+136: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+137: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+137: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+138: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+138: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+139: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+139: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+140: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+140: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+141: raw: 810, voltage: 3.875, soc: 87, lbo: 0
+
+141: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+142: raw: 808, voltage: 3.865, soc: 86, lbo: 0
+
+142: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+143: raw: 807, voltage: 3.860, soc: 86, lbo: 0
+
+143: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+144: raw: 807, voltage: 3.860, soc: 86, lbo: 0
+
+144: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+145: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+145: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+146: raw: 807, voltage: 3.860, soc: 86, lbo: 0
+
+146: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+147: raw: 807, voltage: 3.860, soc: 86, lbo: 0
+
+147: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+148: raw: 806, voltage: 3.855, soc: 85, lbo: 0
+
+148: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+149: raw: 807, voltage: 3.860, soc: 86, lbo: 0
+
+149: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+150: raw: 797, voltage: 3.812, soc: 82, lbo: 0
+
+150: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+151: raw: 797, voltage: 3.812, soc: 82, lbo: 0
+
+151: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+152: raw: 796, voltage: 3.808, soc: 81, lbo: 0
+
+152: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+153: raw: 796, voltage: 3.808, soc: 81, lbo: 0
+
+153: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+154: raw: 796, voltage: 3.808, soc: 81, lbo: 0
+
+154: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+155: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+155: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+156: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+156: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+157: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+157: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+158: raw: 795, voltage: 3.803, soc: 81, lbo: 0
+
+158: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+159: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+159: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+160: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+160: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+161: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+161: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+162: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+162: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+163: raw: 794, voltage: 3.798, soc: 80, lbo: 0
+
+163: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+164: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+164: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+165: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+165: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+166: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+166: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+167: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+167: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+168: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+168: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+169: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+169: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+170: raw: 793, voltage: 3.793, soc: 80, lbo: 0
+
+170: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+171: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+171: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+172: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+172: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+173: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+173: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+174: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+174: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+175: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+175: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+176: raw: 792, voltage: 3.788, soc: 80, lbo: 0
+
+176: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+177: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+177: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+178: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+178: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+179: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+179: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+180: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+180: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+181: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+181: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+182: raw: 791, voltage: 3.784, soc: 79, lbo: 0
+
+182: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+183: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+183: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+184: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+184: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+185: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+185: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+186: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+186: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+187: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+187: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+188: raw: 790, voltage: 3.779, soc: 79, lbo: 0
+
+188: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+189: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+189: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+190: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+190: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+191: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+191: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+192: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+192: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+193: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+193: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+194: raw: 789, voltage: 3.774, soc: 78, lbo: 0
+
+194: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+195: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+195: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+196: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+196: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+197: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+197: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+198: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+198: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+199: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+199: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+200: raw: 788, voltage: 3.769, soc: 78, lbo: 0
+
+200: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+201: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+201: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+202: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+202: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+203: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+203: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+204: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+204: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+205: raw: 787, voltage: 3.764, soc: 77, lbo: 0
+
+205: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+206: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+206: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+207: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+207: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+208: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+208: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+209: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+209: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+210: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+210: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+211: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+211: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+212: raw: 786, voltage: 3.760, soc: 77, lbo: 0
+
+212: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+213: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+213: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+214: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+214: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+215: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+215: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+216: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+216: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+217: raw: 785, voltage: 3.755, soc: 77, lbo: 0
+
+217: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+218: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+218: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+219: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+219: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+220: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+220: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+221: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+221: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+222: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+222: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+223: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+223: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+224: raw: 784, voltage: 3.750, soc: 76, lbo: 0
+
+224: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+225: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+225: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+226: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+226: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+227: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+227: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+228: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+228: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+229: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+229: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+230: raw: 783, voltage: 3.745, soc: 76, lbo: 0
+
+230: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+231: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+231: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+232: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+232: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+233: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+233: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+234: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+234: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+235: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+235: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+236: raw: 782, voltage: 3.741, soc: 75, lbo: 0
+
+236: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+237: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+237: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+238: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+238: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+239: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+239: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+240: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+240: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+241: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+241: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+242: raw: 781, voltage: 3.736, soc: 75, lbo: 0
+
+242: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+243: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+243: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+244: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+244: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+245: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+245: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+246: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+246: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+247: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+247: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+248: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+248: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+249: raw: 780, voltage: 3.731, soc: 75, lbo: 0
+
+249: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+250: raw: 779, voltage: 3.726, soc: 74, lbo: 0
+
+250: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+251: raw: 779, voltage: 3.726, soc: 74, lbo: 0
+
+251: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+252: raw: 779, voltage: 3.726, soc: 74, lbo: 0
+
+252: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+253: raw: 779, voltage: 3.726, soc: 74, lbo: 0
+
+253: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+254: raw: 779, voltage: 3.726, soc: 74, lbo: 0
+
+254: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+255: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+255: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+256: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+256: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+257: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+257: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+258: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+258: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+259: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+259: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+260: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+260: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+261: raw: 778, voltage: 3.721, soc: 74, lbo: 0
+
+261: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+262: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+262: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+263: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+263: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+264: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+264: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+265: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+265: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+266: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+266: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+267: raw: 777, voltage: 3.717, soc: 73, lbo: 0
+
+267: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+268: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+268: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+269: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+269: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+270: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+270: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+271: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+271: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+272: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+272: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+273: raw: 776, voltage: 3.712, soc: 73, lbo: 0
+
+273: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+274: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+274: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+275: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+275: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+276: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+276: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+277: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+277: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+278: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+278: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+279: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+279: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+280: raw: 775, voltage: 3.707, soc: 72, lbo: 0
+
+280: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+281: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+281: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+282: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+282: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+283: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+283: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+284: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+284: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+285: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+285: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+286: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+286: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+287: raw: 774, voltage: 3.702, soc: 72, lbo: 0
+
+287: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+288: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+288: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+289: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+289: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+290: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+290: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+291: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+291: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+292: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+292: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+293: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+293: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+294: raw: 773, voltage: 3.698, soc: 72, lbo: 0
+
+294: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+295: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+295: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+296: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+296: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+297: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+297: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+298: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+298: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+299: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+299: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+300: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+300: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+301: raw: 772, voltage: 3.693, soc: 71, lbo: 0
+
+301: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+302: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+302: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+303: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+303: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+304: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+304: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+305: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+305: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+306: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+306: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+307: raw: 771, voltage: 3.688, soc: 71, lbo: 0
+
+307: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+308: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+308: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+309: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+309: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+310: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+310: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+311: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+311: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+312: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+312: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+313: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+313: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+314: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+314: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+315: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+315: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+316: raw: 770, voltage: 3.683, soc: 70, lbo: 0
+
+316: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+317: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+317: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+318: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+318: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+319: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+319: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+320: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+320: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+321: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+321: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+322: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+322: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+323: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+323: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+324: raw: 769, voltage: 3.678, soc: 70, lbo: 0
+
+324: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+325: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+325: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+326: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+326: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+327: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+327: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+328: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+328: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+329: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+329: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+330: raw: 768, voltage: 3.674, soc: 70, lbo: 0
+
+330: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+331: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+331: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+332: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+332: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+333: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+333: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+334: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+334: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+335: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+335: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+336: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+336: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+337: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+337: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+338: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+338: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+339: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+339: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+340: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+340: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+341: raw: 767, voltage: 3.669, soc: 69, lbo: 0
+
+341: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+342: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+342: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+343: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+343: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+344: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+344: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+345: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+345: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+346: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+346: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+347: raw: 766, voltage: 3.664, soc: 69, lbo: 0
+
+347: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+348: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+348: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+349: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+349: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+350: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+350: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+351: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+351: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+352: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+352: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+353: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+353: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+354: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+354: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+355: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+355: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+356: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+356: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+357: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+357: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+358: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+358: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+359: raw: 764, voltage: 3.654, soc: 68, lbo: 0
+
+359: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+360: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+360: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+361: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+361: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+362: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+362: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+363: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+363: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+364: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+364: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+365: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+365: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+366: raw: 763, voltage: 3.650, soc: 67, lbo: 0
+
+366: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+367: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+367: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+368: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+368: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+369: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+369: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+370: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+370: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+371: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+371: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+372: raw: 762, voltage: 3.645, soc: 67, lbo: 0
+
+372: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+373: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+373: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+374: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+374: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+375: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+375: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+376: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+376: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+377: raw: 761, voltage: 3.640, soc: 67, lbo: 0
+
+377: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+378: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+378: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+379: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+379: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+380: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+380: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+381: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+381: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+382: raw: 760, voltage: 3.635, soc: 66, lbo: 0
+
+382: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+383: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+383: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+384: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+384: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+385: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+385: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+386: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+386: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+387: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+387: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+388: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+388: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+389: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+389: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+390: raw: 759, voltage: 3.631, soc: 66, lbo: 0
+
+390: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+391: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+391: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+392: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+392: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+393: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+393: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+394: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+394: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+395: raw: 758, voltage: 3.626, soc: 65, lbo: 0
+
+395: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+396: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+396: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+397: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+397: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+398: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+398: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+399: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+399: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+400: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+400: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+401: raw: 757, voltage: 3.621, soc: 65, lbo: 0
+
+401: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+402: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+402: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+403: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+403: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+404: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+404: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+405: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+405: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+406: raw: 756, voltage: 3.616, soc: 65, lbo: 0
+
+406: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+407: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+407: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+408: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+408: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+409: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+409: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+410: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+410: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+411: raw: 755, voltage: 3.611, soc: 64, lbo: 0
+
+411: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+412: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+412: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+413: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+413: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+414: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+414: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+415: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+415: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+416: raw: 754, voltage: 3.607, soc: 64, lbo: 0
+
+416: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+417: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+417: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+418: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+418: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+419: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+419: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+420: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+420: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+421: raw: 753, voltage: 3.602, soc: 63, lbo: 0
+
+421: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+422: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+422: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+423: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+423: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+424: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+424: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+425: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+425: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+426: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+426: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+427: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+427: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+428: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+428: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+429: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+429: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+430: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+430: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+431: raw: 752, voltage: 3.597, soc: 63, lbo: 0
+
+431: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+432: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+432: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+433: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+433: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+434: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+434: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+435: raw: 751, voltage: 3.592, soc: 62, lbo: 0
+
+435: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+436: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+436: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+437: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+437: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+438: raw: 750, voltage: 3.588, soc: 62, lbo: 0
+
+438: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+439: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+439: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+440: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+440: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+441: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+441: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+442: raw: 749, voltage: 3.583, soc: 62, lbo: 0
+
+442: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+443: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+443: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+444: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+444: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+445: raw: 748, voltage: 3.578, soc: 61, lbo: 0
+
+445: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+446: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+446: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+447: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+447: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+448: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+448: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+449: raw: 747, voltage: 3.573, soc: 61, lbo: 0
+
+449: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+450: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+450: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+451: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+451: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+452: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+452: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+453: raw: 746, voltage: 3.568, soc: 60, lbo: 0
+
+453: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+454: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+454: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+455: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+455: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+456: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+456: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+457: raw: 745, voltage: 3.564, soc: 60, lbo: 0
+
+457: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+458: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+458: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+459: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+459: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+460: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+460: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+461: raw: 744, voltage: 3.559, soc: 60, lbo: 0
+
+461: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+462: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+462: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+463: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+463: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+464: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+464: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+465: raw: 743, voltage: 3.554, soc: 59, lbo: 0
+
+465: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+466: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+466: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+467: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+467: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+468: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+468: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+469: raw: 742, voltage: 3.549, soc: 59, lbo: 0
+
+469: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+470: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+470: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+471: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+471: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+472: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+472: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+473: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+473: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+474: raw: 741, voltage: 3.544, soc: 58, lbo: 0
+
+474: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+475: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+475: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+476: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+476: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+477: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+477: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+478: raw: 740, voltage: 3.540, soc: 58, lbo: 0
+
+478: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+479: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+479: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+480: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+480: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+481: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+481: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+482: raw: 739, voltage: 3.535, soc: 57, lbo: 0
+
+482: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+483: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+483: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+484: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+484: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+485: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+485: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+486: raw: 738, voltage: 3.530, soc: 57, lbo: 0
+
+486: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+487: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+487: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+488: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+488: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+489: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+489: raw: 708, voltage: 3.387, soc: 45, lbo: 0
+
+490: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+490: raw: 708, voltage: 3.387, soc: 45, lbo: 0
+
+491: raw: 737, voltage: 3.525, soc: 57, lbo: 0
+
+491: raw: 708, voltage: 3.387, soc: 45, lbo: 0
+
+492: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+492: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+493: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+493: raw: 708, voltage: 3.387, soc: 45, lbo: 0
+
+494: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+494: raw: 707, voltage: 3.382, soc: 44, lbo: 0
+
+495: raw: 736, voltage: 3.521, soc: 56, lbo: 0
+
+495: raw: 707, voltage: 3.382, soc: 44, lbo: 0
+
+496: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+496: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+497: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+497: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+498: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+498: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+499: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+499: raw: 706, voltage: 3.377, soc: 44, lbo: 0
+
+500: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+500: raw: 706, voltage: 3.377, soc: 44, lbo: 0
+
+501: raw: 735, voltage: 3.516, soc: 56, lbo: 0
+
+501: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+502: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+502: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+503: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+503: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+504: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+504: raw: 704, voltage: 3.367, soc: 43, lbo: 0
+
+505: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+505: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+506: raw: 734, voltage: 3.511, soc: 55, lbo: 0
+
+506: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+507: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+507: raw: 704, voltage: 3.367, soc: 43, lbo: 0
+
+508: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+508: raw: 703, voltage: 3.363, soc: 42, lbo: 0
+
+509: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+509: raw: 703, voltage: 3.363, soc: 42, lbo: 0
+
+510: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+510: raw: 705, voltage: 3.372, soc: 43, lbo: 0
+
+511: raw: 733, voltage: 3.506, soc: 55, lbo: 0
+
+511: raw: 703, voltage: 3.363, soc: 42, lbo: 0
+
+512: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+512: raw: 704, voltage: 3.367, soc: 43, lbo: 0
+
+513: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+513: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+514: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+514: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+515: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+515: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+516: raw: 732, voltage: 3.501, soc: 55, lbo: 0
+
+516: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+517: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+517: raw: 703, voltage: 3.363, soc: 42, lbo: 0
+
+518: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+518: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+519: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+519: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+520: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+520: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+521: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+521: raw: 706, voltage: 3.377, soc: 44, lbo: 0
+
+522: raw: 731, voltage: 3.497, soc: 54, lbo: 0
+
+522: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+523: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+523: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+524: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+524: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+525: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+525: raw: 706, voltage: 3.377, soc: 44, lbo: 0
+
+526: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+526: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+527: raw: 730, voltage: 3.492, soc: 54, lbo: 0
+
+527: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+528: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+528: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+529: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+529: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+530: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+530: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+531: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+531: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+532: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+532: raw: 698, voltage: 3.339, soc: 40, lbo: 0
+
+533: raw: 729, voltage: 3.487, soc: 53, lbo: 0
+
+533: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+534: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+534: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+535: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+535: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+536: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+536: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+537: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+537: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+538: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+538: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+539: raw: 728, voltage: 3.482, soc: 53, lbo: 0
+
+539: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+540: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+540: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+541: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+541: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+542: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+542: raw: 703, voltage: 3.363, soc: 42, lbo: 0
+
+543: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+543: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+544: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+544: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+545: raw: 727, voltage: 3.477, soc: 52, lbo: 0
+
+545: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+546: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+546: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+547: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+547: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+548: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+548: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+549: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+549: raw: 698, voltage: 3.339, soc: 40, lbo: 0
+
+550: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+550: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+551: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+551: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+552: raw: 726, voltage: 3.473, soc: 52, lbo: 0
+
+552: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+553: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+553: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+554: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+554: raw: 698, voltage: 3.339, soc: 40, lbo: 0
+
+555: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+555: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+556: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+556: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+557: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+557: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+558: raw: 725, voltage: 3.468, soc: 52, lbo: 0
+
+558: raw: 698, voltage: 3.339, soc: 40, lbo: 0
+
+559: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+559: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+560: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+560: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+561: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+561: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+562: raw: 724, voltage: 3.463, soc: 51, lbo: 0
+
+562: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+563: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+563: raw: 704, voltage: 3.367, soc: 43, lbo: 0
+
+564: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+564: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+565: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+565: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+566: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+566: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+567: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+567: raw: 700, voltage: 3.348, soc: 41, lbo: 0
+
+568: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+568: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+569: raw: 723, voltage: 3.458, soc: 51, lbo: 0
+
+569: raw: 701, voltage: 3.353, soc: 42, lbo: 0
+
+570: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+570: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+571: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+571: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+572: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+572: raw: 702, voltage: 3.358, soc: 42, lbo: 0
+
+573: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+573: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+574: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+574: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+575: raw: 722, voltage: 3.454, soc: 50, lbo: 0
+
+575: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+576: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+576: raw: 692, voltage: 3.310, soc: 38, lbo: 0
+
+577: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+577: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+578: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+578: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+579: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+579: raw: 698, voltage: 3.339, soc: 40, lbo: 0
+
+580: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+580: raw: 692, voltage: 3.310, soc: 38, lbo: 0
+
+581: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+581: raw: 699, voltage: 3.344, soc: 41, lbo: 0
+
+582: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+582: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+583: raw: 721, voltage: 3.449, soc: 50, lbo: 0
+
+583: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+584: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+584: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+585: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+585: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+586: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+586: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+587: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+587: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+588: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+588: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+589: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+589: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+590: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+590: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+591: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+591: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+592: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+592: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+593: raw: 720, voltage: 3.444, soc: 50, lbo: 0
+
+593: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+594: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+594: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+595: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+595: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+596: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+596: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+597: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+597: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+598: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+598: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+599: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+599: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+600: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+600: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+601: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+601: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+602: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+602: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+603: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+603: raw: 697, voltage: 3.334, soc: 40, lbo: 0
+
+604: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+604: raw: 696, voltage: 3.329, soc: 40, lbo: 0
+
+605: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+605: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+606: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+606: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+607: raw: 719, voltage: 3.439, soc: 49, lbo: 0
+
+607: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+608: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+608: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+609: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+609: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+610: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+610: raw: 692, voltage: 3.310, soc: 38, lbo: 0
+
+611: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+611: raw: 694, voltage: 3.320, soc: 39, lbo: 0
+
+612: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+612: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+613: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+613: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+614: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+614: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+615: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+615: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+616: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+616: raw: 695, voltage: 3.324, soc: 39, lbo: 0
+
+617: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+617: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+618: raw: 718, voltage: 3.434, soc: 49, lbo: 0
+
+618: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+619: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+619: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+620: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+620: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+621: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+621: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+622: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+622: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+623: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+623: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+624: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+624: raw: 693, voltage: 3.315, soc: 38, lbo: 0
+
+625: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+625: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+626: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+626: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+627: raw: 717, voltage: 3.430, soc: 48, lbo: 0
+
+627: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+628: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+628: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+629: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+629: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+630: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+630: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+631: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+631: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+632: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+632: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+633: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+633: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+634: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+634: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+635: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+635: raw: 682, voltage: 3.262, soc: 34, lbo: 0
+
+636: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+636: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+637: raw: 716, voltage: 3.425, soc: 48, lbo: 0
+
+637: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+638: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+638: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+639: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+639: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+640: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+640: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+641: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+641: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+642: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+642: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+643: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+643: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+644: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+644: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+645: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+645: raw: 690, voltage: 3.301, soc: 37, lbo: 0
+
+646: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+646: raw: 681, voltage: 3.257, soc: 33, lbo: 0
+
+647: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+647: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+648: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+648: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+649: raw: 715, voltage: 3.420, soc: 47, lbo: 0
+
+649: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+650: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+650: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+651: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+651: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+652: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+652: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+653: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+653: raw: 680, voltage: 3.253, soc: 33, lbo: 0
+
+654: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+654: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+655: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+655: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+656: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+656: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+657: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+657: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+658: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+658: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+659: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+659: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+660: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+660: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+661: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+661: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+662: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+662: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+663: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+663: raw: 689, voltage: 3.296, soc: 37, lbo: 0
+
+664: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+664: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+665: raw: 714, voltage: 3.415, soc: 47, lbo: 0
+
+665: raw: 691, voltage: 3.305, soc: 37, lbo: 0
+
+666: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+666: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+667: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+667: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+668: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+668: raw: 680, voltage: 3.253, soc: 33, lbo: 0
+
+669: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+669: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+670: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+670: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+671: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+671: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+672: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+672: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+673: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+673: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+674: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+674: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+675: raw: 713, voltage: 3.411, soc: 47, lbo: 0
+
+675: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+676: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+676: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+677: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+677: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+678: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+678: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+679: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+679: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+680: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+680: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+681: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+681: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+682: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+682: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+683: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+683: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+684: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+684: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+685: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+685: raw: 687, voltage: 3.286, soc: 36, lbo: 0
+
+686: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+686: raw: 681, voltage: 3.257, soc: 33, lbo: 0
+
+687: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+687: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+688: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+688: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+689: raw: 712, voltage: 3.406, soc: 46, lbo: 0
+
+689: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+690: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+690: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+691: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+691: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+692: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+692: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+693: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+693: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+694: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+694: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+695: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+695: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+696: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+696: raw: 688, voltage: 3.291, soc: 36, lbo: 0
+
+697: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+697: raw: 681, voltage: 3.257, soc: 33, lbo: 0
+
+698: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+698: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+699: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+699: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+700: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+700: raw: 682, voltage: 3.262, soc: 34, lbo: 0
+
+701: raw: 711, voltage: 3.401, soc: 46, lbo: 0
+
+701: raw: 682, voltage: 3.262, soc: 34, lbo: 0
+
+702: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+702: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+703: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+703: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+704: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+704: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+705: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+705: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+706: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+706: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+707: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+707: raw: 681, voltage: 3.257, soc: 33, lbo: 0
+
+708: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+708: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+709: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+709: raw: 682, voltage: 3.262, soc: 34, lbo: 0
+
+710: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+710: raw: 686, voltage: 3.281, soc: 35, lbo: 0
+
+711: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+711: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+712: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+712: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+713: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+713: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+714: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
+714: raw: 685, voltage: 3.277, soc: 35, lbo: 0
+
+715: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+715: raw: 683, voltage: 3.267, soc: 34, lbo: 0
+
+716: raw: 709, voltage: 3.391, soc: 45, lbo: 0
+
+716: raw: 684, voltage: 3.272, soc: 35, lbo: 0
+
+717: raw: 765, voltage: 3.659, soc: 68, lbo: 0
+
+717: raw: 710, voltage: 3.396, soc: 45, lbo: 0
+
