@@ -24,7 +24,7 @@
  (net 27ca8f55-c082-4cbf-a9fc-0cadc122c91f (auto false) (name "BAT+")
   (netclass 52a6eb45-05ee-45e6-a59c-5c708a6bbf4d)
  )
- (net 2e06ee1a-d0f8-4c3b-9c19-2775bf158868 (auto false) (name "Horn_PWR")
+ (net 2e06ee1a-d0f8-4c3b-9c19-2775bf158868 (auto false) (name "Horn_-")
   (netclass 52a6eb45-05ee-45e6-a59c-5c708a6bbf4d)
  )
  (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe (auto false) (name "5V")
@@ -93,8 +93,25 @@
  (net f3bd98d8-e2a5-4946-97ac-c6683fe06e68 (auto false) (name "CSN")
   (netclass 52a6eb45-05ee-45e6-a59c-5c708a6bbf4d)
  )
+ (net f521ec4f-0193-4d79-a0a8-ab6492aa2cbd (auto false) (name "12V")
+  (netclass 52a6eb45-05ee-45e6-a59c-5c708a6bbf4d)
+ )
  (net f5afbb1a-4a11-4ef7-b216-c95ca61a5b61 (auto false) (name "Indicator_Led")
   (netclass 52a6eb45-05ee-45e6-a59c-5c708a6bbf4d)
+ )
+ (component 01cfbaf6-be12-4453-9163-e9a953f56a0b
+  (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
+  (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
+  (name "J13") (value "PWR_LEDs")
+  (lock_assembly false)
+  (device 51015f80-3c94-4bd1-a7ac-238337a8331f
+   (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
+  )
+  (device 3f8b7593-b244-4e55-87f9-41ad54df157d
+   (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
+  )
+  (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
+  (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
  (component 0b08a35d-35d1-4724-a4d3-1f50f2621522
   (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
@@ -107,6 +124,13 @@
   )
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 73c496ec-d5f0-4d1c-9eea-f37f4abec16e))
+ )
+ (component 0e1d6a69-d97e-442d-bfea-bda7cf996e49
+  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
+  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
+  (name "GND10") (value "GND")
+  (lock_assembly false)
+  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
  )
  (component 0e4b2467-2a32-48a5-a3ee-404015222c2e
   (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
@@ -169,6 +193,13 @@
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net dd8fac8d-09a8-4d11-b4d9-524552654e14))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 27ca8f55-c082-4cbf-a9fc-0cadc122c91f))
  )
+ (component 23abd37c-2531-4ea5-ab46-1169df3d4f88
+  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
+  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
+  (name "GND12") (value "GND")
+  (lock_assembly false)
+  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
+ )
  (component 24977445-b0cf-409f-83c1-fe6c99819a0f
   (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
   (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
@@ -176,10 +207,10 @@
   (lock_assembly false)
   (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
- (component 34222d29-f5b1-4a10-9949-8745f40e74da
+ (component 2faf5bac-d119-4c75-ac08-ff1b36436a43
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
   (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
-  (name "J8") (value "GND")
+  (name "J15") (value "Horn_PWR\n")
   (lock_assembly false)
   (device 51015f80-3c94-4bd1-a7ac-238337a8331f
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
@@ -187,7 +218,7 @@
   (device 3f8b7593-b244-4e55-87f9-41ad54df157d
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
   )
-  (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
+  (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net f521ec4f-0193-4d79-a0a8-ab6492aa2cbd))
   (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
  )
  (component 397e208b-72d1-4ced-8eab-f67e3278badd
@@ -207,27 +238,6 @@
   (name "GND8") (value "GND")
   (lock_assembly false)
   (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
- )
- (component 40fb4f0e-b85b-4a87-9fd2-3134a93ad9a5
-  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
-  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
-  (name "GND5") (value "GND")
-  (lock_assembly false)
-  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
- )
- (component 435532e5-9c1e-4947-b399-b03239248e34
-  (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
-  (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
-  (name "J13") (value "PWR_LEDs")
-  (lock_assembly false)
-  (device 51015f80-3c94-4bd1-a7ac-238337a8331f
-   (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
-  )
-  (device 3f8b7593-b244-4e55-87f9-41ad54df157d
-   (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
-  )
-  (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
-  (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
  (component 4b1365e3-5aec-4d76-b90d-13c7c45a8deb
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
@@ -294,13 +304,6 @@
   (signal 8c4e76a3-fca1-4e4b-9361-1f6cb3f8d835 (net none))
   (signal 8ca662a0-f593-40fc-be47-3daff1044501 (net 27ca8f55-c082-4cbf-a9fc-0cadc122c91f))
  )
- (component 607ba70f-4a9b-4035-a9be-63cba27628a8
-  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
-  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
-  (name "GND10") (value "GND")
-  (lock_assembly false)
-  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
- )
  (component 60cde11c-19e7-474c-a406-2b088e7b2155
   (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
   (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
@@ -364,6 +367,13 @@
   (signal af3ffca8-0085-4edb-a775-fcb759f63411 (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
   (signal e010ecbb-6210-4da3-9270-ebd58656dbf0 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
+ (component 85464c5a-9044-460d-9089-82e3d85bef82
+  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
+  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
+  (name "VCC11") (value "12V")
+  (lock_assembly false)
+  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net f521ec4f-0193-4d79-a0a8-ab6492aa2cbd))
+ )
  (component 89dcf2d4-b1c7-4c03-98e0-4d7003aa052a
   (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
   (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
@@ -374,7 +384,7 @@
  (component 8cd00cbe-618d-4dfd-bb54-9e82ea8169ee
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
   (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
-  (name "J14") (value "Horn_PWR\n")
+  (name "J14") (value "Horn_Conn\n")
   (lock_assembly false)
   (device 51015f80-3c94-4bd1-a7ac-238337a8331f
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
@@ -383,12 +393,19 @@
    (variant 0357c63f-5766-451e-9243-9d31c38e9a8c)
   )
   (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net 2e06ee1a-d0f8-4c3b-9c19-2775bf158868))
-  (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
+  (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net f521ec4f-0193-4d79-a0a8-ab6492aa2cbd))
  )
  (component 90270b3a-f3e4-4fcd-9708-c0b21c9ac31b
   (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
   (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
   (name "VCC9") (value "5V")
+  (lock_assembly false)
+  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
+ )
+ (component 9034876e-e011-44eb-bdaf-59c3d440e688
+  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
+  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
+  (name "VCC7") (value "5V")
   (lock_assembly false)
   (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
@@ -434,6 +451,13 @@
   (lock_assembly false)
   (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net ac7fe3cf-b95e-4952-b047-ca84dd656eaf))
  )
+ (component a9c54827-db49-481f-a6c9-c6b71869bca4
+  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
+  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
+  (name "VCC10") (value "12V")
+  (lock_assembly false)
+  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net f521ec4f-0193-4d79-a0a8-ab6492aa2cbd))
+ )
  (component b6ce2d2b-08f8-4a8e-8ebf-9ff7637e7296
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
   (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
@@ -461,13 +485,6 @@
   (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
   (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
   (name "VCC4") (value "5V")
-  (lock_assembly false)
-  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
- )
- (component c2f0878d-61a5-4c20-916b-0ccbbf036966
-  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
-  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
-  (name "VCC7") (value "5V")
   (lock_assembly false)
   (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 2fa7e573-2a62-4197-bc7c-53d6334b60fe))
  )
@@ -567,13 +584,6 @@
   (signal 2bd86801-9bf8-4bc0-9597-760306a341e6 (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
   (signal 62926ed5-b4d1-4d1c-9b66-f4b4064d37db (net 0562ee61-0cd9-45fd-a72e-f861f10ea4ac))
   (signal 696683f8-4a4e-4a13-959d-56e2428d7914 (net 2e06ee1a-d0f8-4c3b-9c19-2775bf158868))
- )
- (component e9e27a79-503d-49a7-87a8-42ec4bcf96a0
-  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
-  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
-  (name "GND12") (value "GND")
-  (lock_assembly false)
-  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 42c2b6f2-dfea-4605-a7be-aba4ecde64c1))
  )
  (component ec43fef2-b2bf-44be-b6ad-b2c233b8c5bb
   (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
