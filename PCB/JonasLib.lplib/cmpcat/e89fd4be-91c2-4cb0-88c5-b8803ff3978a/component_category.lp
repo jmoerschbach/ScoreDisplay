@@ -1,0 +1,10 @@
+(librepcb_component_category e89fd4be-91c2-4cb0-88c5-b8803ff3978a
+ (name "Modules")
+ (description "Complete module PCBs which fulfill a certain functionality and are usually connected to a microcontroller such as Arduino.")
+ (keywords "")
+ (author "Jonas")
+ (version "0.1")
+ (created 2023-11-30T20:00:43Z)
+ (deprecated false)
+ (parent none)
+)

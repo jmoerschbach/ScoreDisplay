@@ -1,0 +1,12 @@
+(librepcb_library c39b1d09-7414-4df9-929d-ee1ec4d60ecf
+ (name "JonasLib")
+ (description "Various stuff as LibrePCB misses alot")
+ (keywords "")
+ (author "Jonas")
+ (version "0.1")
+ (created 2023-11-30T19:56:16Z)
+ (deprecated false)
+ (url "")
+ (dependency a9ddf0c6-9b1c-4730-b300-01b4f192ad40)
+ (manufacturer "")
+)
