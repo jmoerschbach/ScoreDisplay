@@ -1,11 +1,18 @@
 #ifndef _BATTERYMONITOR_h
 #define _BATTERYMONITOR_h
 #include <stdint.h>
+#include <Arduino.h>  // analogRead
+
+
+constexpr int BATTERY_PIN = A6;
 
 class BatteryMonitor {
-  public:
+public:
   void begin();
   uint8_t getSoCInPercent();
-  private:
+private:
+  void calculateSoC();
+  int measure(uint8_t numberOfMeasuers);
+  uint8_t soc = 100;
 };
 #endif

@@ -2,8 +2,23 @@
 
 void BatteryMonitor::begin() {
 
+  calculateSoC();
+  //start timer to calculate SoC every x min
 }
 
 uint8_t BatteryMonitor::getSoCInPercent() {
-  return 100;
+  return soc;
+}
+void BatteryMonitor::calculateSoC() {
+  int averagedValue = measure(10);
+  soc = map(averagedValue, 600, 840, 0, 100);
+}
+int BatteryMonitor::measure(uint8_t numberOfMeasuers) {
+
+  int rawValue = 0;
+  for (uint8_t i = 0; i < numberOfMeasuers; i++) {
+    rawValue += analogRead(BATTERY_PIN);
+  }
+
+  return rawValue / numberOfMeasuers;
 }
