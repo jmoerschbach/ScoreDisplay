@@ -10,10 +10,11 @@ struct BatteryPacket {
 RF24 radio(10, 9);  // CE, CSN
 constexpr uint8_t ADDRESS_MAIN_DISPLAY[6] = "MAIN0";
 constexpr float factor = 0.004783354;
+constexpr int HORN_PIN = 0;
 
 BatteryPacket data;
 void setup() {
-  Serial.begin(9600);
+  // Serial.begin(9600);
   radio.begin();
   radio.setChannel(110);
   radio.openReadingPipe(0, ADDRESS_MAIN_DISPLAY);
@@ -21,12 +22,19 @@ void setup() {
   radio.setDataRate(RF24_250KBPS);
   radio.startListening();
 
-  Serial.println("Ready to receive");
+  // Serial.println("Ready to receive");
+
+  pinMode(HORN_PIN, OUTPUT);
 
 }
 
 
 void loop() {
+  delay(1000);
+  digitalWrite(HORN_PIN, HIGH);
+  delay(1000);
+  digitalWrite(HORN_PIN, LOW);
+
   if (radio.available()) {
     radio.read(&data, sizeof(data));
 

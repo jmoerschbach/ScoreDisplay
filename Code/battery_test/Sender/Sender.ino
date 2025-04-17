@@ -14,10 +14,11 @@ constexpr float factor = 0.004882813;
 
 #define LEDS_PER_SEGMENT 11
 #define NUM_LEDS (2 * 7 * LEDS_PER_SEGMENT)
-#define DATA_PIN_LEDS 3
+#define DATA_PIN_LEDS A0
 
 CRGB _leds[NUM_LEDS];
 uint8_t LBO_PIN = 2;
+constexpr int HORN_PIN = 0;
 int counter = 0;
 RF24 radio(10, 9);  // CE, CSN
 
@@ -30,35 +31,41 @@ void setup() {
   fill_solid(_leds, NUM_LEDS, CRGB::Red);
 
 
-  radio.begin();
-  radio.setChannel(110);
-  radio.setPALevel(RF24_PA_MAX);
-  radio.setDataRate(RF24_250KBPS);
-  radio.stopListening();
+  // radio.begin();
+  // radio.setChannel(110);
+  // radio.setPALevel(RF24_PA_MAX);
+  // radio.setDataRate(RF24_250KBPS);
+  // radio.stopListening();
 
   FastLED.show();
-  pinMode(LBO_PIN, INPUT);
+  // pinMode(LBO_PIN, INPUT);
+  pinMode(HORN_PIN, OUTPUT);
 }
 void loop() {
 
   //turn leds off and wait
-  FastLED.clear();
-  FastLED.show();
-  delay(100);
-  measureAndSend();
-  radio.openWritingPipe(ADDRESS_MAIN_DISPLAY);
-  radio.write(&data, sizeof(data));
+  // FastLED.clear();
+  // FastLED.show();
+  // delay(100);
+  // measureAndSend();
+  // radio.openWritingPipe(ADDRESS_MAIN_DISPLAY);
+  // radio.write(&data, sizeof(data));
 
-  // turn leds on and wait
-  fill_solid(_leds, NUM_LEDS, CRGB::Red);
-  FastLED.show();
-  delay(100);
-  measureAndSend();
-  radio.openWritingPipe(ADDRESS_MAIN_DISPLAY);
-  radio.write(&data, sizeof(data));
+  // // turn leds on and wait
+  // fill_solid(_leds, NUM_LEDS, CRGB::Red);
+  // FastLED.show();
+  // delay(100);
+  // measureAndSend();
+  // radio.openWritingPipe(ADDRESS_MAIN_DISPLAY);
+  // radio.write(&data, sizeof(data));
 
-  counter++;
-  delay(60 * 1000UL);
+  // counter++;
+  // delay(60 * 1000UL);
+  delay(1000);
+  digitalWrite(HORN_PIN, HIGH);
+  delay(1000);
+  digitalWrite(HORN_PIN, LOW);
+
 }
 
 void measureAndSend() {
