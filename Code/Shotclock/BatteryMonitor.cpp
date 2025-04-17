@@ -11,7 +11,7 @@ uint8_t BatteryMonitor::getSoCInPercent() {
 }
 void BatteryMonitor::calculateSoC() {
   int averagedValue = measure(10);
-  soc = map(averagedValue, 600, 840, 0, 100);
+  soc = map(averagedValue, 700, 850, 0, 100);
 }
 int BatteryMonitor::measure(uint8_t numberOfMeasuers) {
 
