@@ -3,7 +3,7 @@
 #include "Constants.h"
 #include "SevenSegmentVisualization.h"
 #include "DataPackages.h"
-#if defined(BATTERY_POWERED)
+#if defined(BATTERY_POWERED_SHOTCLOCK)
 #include "BatteryMonitor.h"
 // minimal state of charge before display is disabled
 constexpr int SOC_THRESHOLD = 5;
@@ -30,7 +30,7 @@ void setup() {
   digitalWrite(BUZZER_PIN, LOW);
 
 
-#if defined(BATTERY_POWERED)
+#if defined(BATTERY_POWERED_SHOTCLOCK)
   monitor.begin();
   data.secondsToShot = min(99, monitor.getSoCInPercent());
 #endif
@@ -39,15 +39,16 @@ void setup() {
 }
 
 void loop() {
-#if defined(BATTERY_POWERED)
+#if defined(BATTERY_POWERED_SHOTCLOCK)
+  monitor.loop();
   if (monitor.getSoCInPercent() < SOC_THRESHOLD) {
     data.enabled = false;
     visualization.visualize(data);
   } else
 #endif
     if (radio.available()) {
-    radio.read(&data, sizeof(data));
-    visualization.visualize(data);
-    digitalWrite(BUZZER_PIN, data.beep);
-  }
+      radio.read(&data, sizeof(data));
+      visualization.visualize(data);
+      digitalWrite(BUZZER_PIN, data.beep);
+    }
 }

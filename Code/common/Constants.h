@@ -20,6 +20,12 @@
 #define SYSTEM 0
 
 /**
+* This enables battery monitoring in shotclocks.
+* Comment out if building for shotclocks without battery support.
+*/
+#define BATTERY_POWERED_SHOTCLOCK
+
+/**
 * This is the frequenzy offset.
 *
 * The frequenzy must be the same for all 3 components of a system:
