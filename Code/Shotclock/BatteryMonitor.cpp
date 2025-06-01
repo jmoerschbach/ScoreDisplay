@@ -31,7 +31,7 @@ void BatteryMonitor::loop() {
     tick_1s = false;
     seconds_counter++;
   }
-  if(seconds_counter > 1 * 60) {
+  if(seconds_counter > 1 * 10) {
     seconds_counter = 0;
     calculateSoC();
   }
@@ -43,7 +43,7 @@ uint8_t BatteryMonitor::getSoCInPercent() {
 
 void BatteryMonitor::calculateSoC() {
   int averagedValue = measure(10);
-  soc = map(averagedValue, 700, 850, 0, 100);
+  soc = map(averagedValue, 710, 817, 0, 100);
 }
 
 int BatteryMonitor::measure(uint8_t numberOfMeasuers) {

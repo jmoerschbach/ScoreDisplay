@@ -31,7 +31,11 @@ void setup() {
 
 
 #if defined(BATTERY_POWERED_SHOTCLOCK)
-  monitor.begin();
+  // light up (almost) all LEDs for initial measurement
+  data.secondsToShot = 0;
+  visualization.visualize(data);
+  delay(10);
+  monitor.begin(); // start measuring
   data.secondsToShot = min(99, monitor.getSoCInPercent());
 #endif
   visualization.visualize(data);

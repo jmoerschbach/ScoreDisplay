@@ -7,7 +7,7 @@
 *
 * Comment out if building for later versions!
 */
-#define LED_DENSITY_LOW
+//#define LED_DENSITY_LOW
 
 /**
 * This decides which frequency is used.
