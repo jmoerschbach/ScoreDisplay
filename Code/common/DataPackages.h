@@ -11,6 +11,7 @@ struct MainDisplayData {
   uint8_t halftime = 0;
   bool showTime = true;
   bool enabled = true;
+  bool beep = false;
   HTMLColorCode timeColor = Red;
   HTMLColorCode awayScoreColor = Blue;
   HTMLColorCode homeScoreColor = Green;
