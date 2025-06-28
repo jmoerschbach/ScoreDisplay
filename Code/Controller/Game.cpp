@@ -105,14 +105,18 @@ void Game::increaseAwayScore() {
 }
 void Game::decreaseAwayScore() {
   if (_mode == MANUAL_TIME_SETTING) {
-    _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() - 1);
+    if (_timeScore.getTimeLeftToPlay() > 0) {
+      _timeScore.setTimeLeftToPlay(_timeScore.getTimeLeftToPlay() - 1);
+    }
   } else {
     _timeScore.decreaseAwayScore();
   }
 }
 void Game::decreaseHalfTime() {
   if (_mode == MANUAL_TIME_SETTING) {
-    _shotclock.setTimeLeftToShoot(_shotclock.getTimeLeftToShoot() - 1);
+    if (_shotclock.getTimeLeftToShoot() > 0) {
+      _shotclock.setTimeLeftToShoot(_shotclock.getTimeLeftToShoot() - 1);
+    }
   } else {
     _timeScore.decreaseHalfTime();
   }
@@ -137,7 +141,7 @@ void Game::toggleMode() {
     _mode = MANUAL_TIME_SETTING;
   } else {
     _mode = NORMAL;
-    if(_timeScore.getTimeLeftToPlay() < 60) {
+    if (_timeScore.getTimeLeftToPlay() < 60) {
       _shotclock.setTimeLeftToShoot(_timeScore.getTimeLeftToPlay());
     }
   }
