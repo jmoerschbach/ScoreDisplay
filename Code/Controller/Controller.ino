@@ -22,6 +22,7 @@ void onDataChangedCallback() {
   mainDisplayData.secondsToPlay = game.getTimeLeftToPlay();
   mainDisplayData.halftime = game.getHalfTime();
   mainDisplayData.showTime = game.isTimeVisible();
+  mainDisplayData.beep = game.isBeep();
 
   mainDisplayData.timeColor = White;
   mainDisplayData.awayScoreColor = White;
@@ -32,9 +33,13 @@ void onDataChangedCallback() {
   shotclockData.enabled = game.isShotclockVisible();
   shotclockData.beep = game.isShotclockBeep();
 
-  send();
+  // if (game.isBeep()) {
+  //   digitalWrite(BUZZER_PIN, HIGH);
+  // } else {
+  //   digitalWrite(BUZZER_PIN, LOW);
+  // }
 
-  digitalWrite(BUZZER_PIN, game.isBeep());
+  send();
 }
 
 

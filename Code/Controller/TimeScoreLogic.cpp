@@ -1,7 +1,7 @@
 #include "TimeScoreLogic.h"
 
 constexpr int TIME_BLINKS = 8;
-constexpr int TIME_BEEPS = 1;
+constexpr int TIME_BEEPS = 5;
 
 constexpr int TIME_MANUAL_BLINKS = 2;
 

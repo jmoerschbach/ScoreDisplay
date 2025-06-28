@@ -12,6 +12,7 @@ SevenSegmentVisualization visualization;
 MainDisplayData data;
 void setup() {
   pinMode(HORN_PIN, OUTPUT);
+  digitalWrite(HORN_PIN, LOW); //turn off horn
   radio.begin();
   radio.setChannel(CHANNEL);
   radio.openReadingPipe(0, ADDRESS_MAIN_DISPLAY);
