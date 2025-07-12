@@ -5,16 +5,17 @@ constexpr int COMPARE_MATCH_200ms = 12500;  // 0.2 * CLK_FREQ / PRESCALER
 
 volatile bool tick_1s = false;
 volatile bool tick_200ms = false;
-
+volatile uint16_t timer_counter = 0;
 
 ISR(TIMER1_COMPA_vect) {
-  OCR1A += COMPARE_MATCH_200ms;
+  timer_counter++;
+  // Every interrupt (200ms base)
   tick_200ms = true;
-}
 
-ISR(TIMER1_COMPB_vect) {
-  OCR1B += COMPARE_MATCH_1s;
-  tick_1s = true;
+  if (timer_counter >= 5) {  // Every 5th interrupt (1000ms)
+    timer_counter = 0;
+    tick_1s = true;
+  }
 }
 
 
@@ -24,10 +25,14 @@ void configureTimer() {
   TCCR1B = 0;
 
   TCCR1B |= B00000100;          // Prescaler = 256
-  OCR1A = COMPARE_MATCH_200ms;  // Timer Compare1A Register
+
+  // Set up CTC mode (Clear Timer on Compare Match)
+  TCCR1B |= (1 << WGM12);       // CTC mode
+
+  OCR1A = COMPARE_MATCH_200ms;  // Timer Compare1A Register for 200ms
   TIMSK1 |= B00000010;          // Enable Timer COMPA Interrupt
-  OCR1B = COMPARE_MATCH_1s;     // Timer Compare1B Register
-  TIMSK1 |= B00000100;          // Enable Timer COMPB Interrupt
+
+  // Remove Timer1B interrupt since we're using a counter approach
   sei();
 }
 
