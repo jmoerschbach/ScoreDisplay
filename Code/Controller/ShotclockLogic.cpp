@@ -5,7 +5,7 @@ constexpr int SHOTCLOCK_BEEPS = 5;
 constexpr int SHOTCLOCK_MANUAL_BLINKS = 2;
 
 Shotclock::Shotclock()
-  : _timeLeftToShoot(60), _isShotclockEnabled(true), _showShotclock(true), _shotclockBlinkCounter(SHOTCLOCK_BLINKS), _shotclockBeepCounter(SHOTCLOCK_BEEPS), _manualSettingBlinkCounter(SHOTCLOCK_MANUAL_BLINKS), _mode(NORMAL) {
+  : _timeLeftToShoot(60), _isShotclockEnabled(true), _showShotclock(true), _shotclockBlinkCounter(SHOTCLOCK_BLINKS), _beepShotclock(false), _shotclockBeepCounter(SHOTCLOCK_BEEPS), _manualSettingBlinkCounter(SHOTCLOCK_MANUAL_BLINKS), _mode(NORMAL) {
 }
 void Shotclock::enableDisableShotclock() {
   _isShotclockEnabled = !_isShotclockEnabled;
@@ -15,6 +15,8 @@ void Shotclock::setTimeLeftToShoot(uint8_t time) {
   _timeLeftToShoot = time;
   _shotclockBlinkCounter = SHOTCLOCK_BLINKS;
   _shotclockBeepCounter = SHOTCLOCK_BEEPS;
+  _beepShotclock = false;
+  _showShotclock = true;
 }
 
 void Shotclock::on1000msPassed() {
